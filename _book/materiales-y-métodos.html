@@ -30,7 +30,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="John Doe" />
 
 
-<meta name="date" content="2021-10-13" />
+<meta name="date" content="2021-10-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -79,14 +79,12 @@ set in the _output.yml file.</p>" />
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Resumen</a><ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like <span>https://bookdown.org/yihui/bookdown</span></a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i>Summary</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#agradecimientos"><i class="fa fa-check"></i>Agradecimientos</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#tabla-de-contenido"><i class="fa fa-check"></i>Tabla de contenido</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="índice-de-cuadros-y-figuras.html"><a href="índice-de-cuadros-y-figuras.html"><i class="fa fa-check"></i>Índice de cuadros y figuras</a><ul>
-<li class="chapter" data-level="" data-path="índice-de-cuadros-y-figuras.html"><a href="índice-de-cuadros-y-figuras.html#figuras"><i class="fa fa-check"></i>Figuras</a></li>
-<li class="chapter" data-level="" data-path="índice-de-cuadros-y-figuras.html"><a href="índice-de-cuadros-y-figuras.html#tablas"><i class="fa fa-check"></i>Tablas</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#figuras"><i class="fa fa-check"></i>Figuras</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#tablas"><i class="fa fa-check"></i>Tablas</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a><ul>
 <li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#objetivo-general"><i class="fa fa-check"></i>Objetivo general</a></li>
@@ -148,7 +146,7 @@ set in the _output.yml file.</p>" />
 <td>phyloseq</td>
 <td>Herramientas para la importación, análisis, almacenamiento y la visualización de datos de microbioma.</td>
 <td>Bioconductor</td>
-<td>if(!requireNamespace(“BiocManager”, quietly = TRUE)) install.packages(“BiocManager”) BiocManager::install(“phyloseq”)</td>
+<td>if(!requireNamespace(“BiocManager”, quietly = TRUE)) install.packages(“BiocManager”); BiocManager::install(“phyloseq”)</td>
 </tr>
 <tr class="odd">
 <td>devtools</td>
@@ -160,13 +158,13 @@ set in the _output.yml file.</p>" />
 <td>SpiecEasi</td>
 <td>Estimación de la covarianza de datos de abundancia e inferencia de redes ecológicas.</td>
 <td>GitHub</td>
-<td>library(devtools)</td>
+<td>library(devtools); install_github(“zdk123/SpiecEasi”)</td>
 </tr>
 <tr class="odd">
 <td>seqtime</td>
 <td>Provee datos de series temporales de microbiota, y herramientas para simular y analizar la dinámica de comunidades microbianas en el tiempo.</td>
 <td>GitHub</td>
-<td>library(devtools)</td>
+<td>library(devtools); install_github(“hallucigenia- sparsa/seqtime”)</td>
 </tr>
 <tr class="even">
 <td>muxViz</td>

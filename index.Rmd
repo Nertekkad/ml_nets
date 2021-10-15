@@ -22,4 +22,29 @@ csl: ieee.csl
 ## Tabla de contenido {-}
 # Índice de cuadros y figuras {-}
 ## Figuras {-}
+
+**Figura 1:** Red aleatoria y red de mundo pequeño [@schaeffer2007graph].
+
+**Figura 2:** La aleatoriedad de las redes [@watts1998collective].
+
+**Figura 3:** Aleatoriedad de la red vs. longitud de la red [@watts1998collective].
+
+**Figura 4:** Tipos de centralidades [@farahani2019application].
+
+**Figura 5:** Tipos de redes multicapa [@bianconi2018multilayer].
+
+**Figura 6:** Red multiplex de familias florentinas del Renacimiento [@padgett1993robust].
+
+**Figura 7:** Matriz de supra-adyacencia [@cozzo2016multilayer].
+
+**Figura 8:** Coeficiente de clusterización en redes multicapa [@cozzo2013clustering].
+
+**Figura 9:** Análisis de las propiedades de una red multiplex del metro de Zaragoza [@aleta2017multilayer].
+
+**Figura 10:** Red temporal de un modelo SIS [@sanz2014dynamics].
+
+**Figura 11:** Diagrama de interacciones del genoma, epigenoma, transcriptoma, proteoma y metaboloma [@sun2016integrative].
+
+**Figura 12:** Diagrama de interacciones en un ecosistema [@schleuning2020trait].
+
 ## Tablas {-}
