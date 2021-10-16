@@ -12,3 +12,4 @@ seqtime | Provee datos de series temporales de microbiota, y herramientas para s
 muxViz | Construcción, diseño y análisis de redes multicapa. | GitHub | devtools::install_github("manlius/muxViz")
 multinet | Construcción, diseño y análisis de redes multicapa. | CRAN | install.packages("multinet")
 corrplot | Análisis de la correlación de matrices. | CRAN | install.packages("corrplot")
+
