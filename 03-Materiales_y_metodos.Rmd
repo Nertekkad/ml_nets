@@ -1,4 +1,5 @@
 # Materiales y métodos {-}
+----
 
 Previamente hemos analizado las posibilidades y limitaciones de las redes multicapa, así como el procedimiento que implica su inferencia y construcción. Para la realización de este trabajo se utilizó la versión 4.1.0 (2021-05-18) de R. Se emplearon los paquetes *igraph*, *phyloseq*, *devtools*, *SpiecEasi*, *seqtime*, *muxViz* y *multinet*. Algunos de los paquetes están disponibles en CRAN y pueden ser descargados mediante el comando *install.packages()* de R, pero otros fueron descargados de repositorios de GitHub o del proyecto para análisis de datos genómicos Bioconductor.
 
