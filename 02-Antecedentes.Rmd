@@ -1,4 +1,5 @@
 # Antecedentes {-}
+
 ----
 
 ## Definición y generalidades de una red {-}
@@ -178,4 +179,70 @@ El análisis mediante redes temporales ha arrojado información sobre el cambio 
 Hemos visto que la creación de redes temporales y redes multiplex es posible mediante la delta de Kronecker, dicha función  permite conectar los nodos de una capa con sus respectivos nodos réplica en las capas adyacentes. Sin embargo, al intentar construir las redes de cada capa nos encontramos con un problema: Construir una red a partir de los datos experimentales. Como solución se han propuesto numerosos algoritmos que llevan a cabo la tarea de inferir las posibles asociaciones entre los componentes de una red partiendo de las abundancias de secuencias en las muestras, mismas que pueden asociarse a OTUs o transcritos de genes.
 
 Para identificar la presencia de algún microorganismo o la expresión de algún gen a partir de una muestra se emplean métodos de amplificación de ácidos nucleicos, tales como el PCR o el RT-PCR, con el fin de identificar secuencias específicas. A partir del análisis de estas secuencias se obtienen las abundancias relativas, mismas que pueden interpretarse como el volumen de las secuencias identificadas en una muestra [@villaintroduction].
+
+Podemos organizar los datos dentro de una matriz $n x p$ , donde $n$ representa el conjunto de muestras y $p$ la lista de secuencias identificadas, siendo por lo general $n<p$. Cada elemento de la matriz representa la abundancia de una secuencia $j$ en una muestra $i$. A partir de esta información podemos construir una matriz de similaridad, misma que representan las similaridades entre las abundancias relativas entre las secuencias. Con base en dicha matriz, podemos conectar aquellas secuencias identificadas o nodos (OTUs, genes, transcritos, etc.) que posean una mayor correlación entre ellas [@butte1999unsupervised]. Existen numerosos algoritmos capaces de realizar esta tarea, mismos que analizaremos a continuación.
+
+La forma más sencilla de generar una red a partir de una matriz de similaridad es eliminando todos aquellos elementos de la matriz cuya similitud  sea demasiado débil, es decir, que se encuentre por debajo de determinado umbral [@villaintroduction]. A partir de la matriz resultante se genera una matriz de adyacencia, donde todos aquellos valores por encima del umbral seleccionado son considerados como conexiones entre las secuencias asociadas a algún gen o microorganismo específico, mismos que representamos como nodos dentro de la red [@butte1999mutual].
+
+![**Figura 13:** El principio básico de un algoritmo de inferencia de redes es la generación de una matriz de similaridad que represente las relaciones de co-abundancia de las secuencias identificadas a partir de los datos muestrales. Cada una de las distintas secuencias encontradas serán consideradas como nodos de la futura red. Todos los valores de la matriz de similaridad que se encuentren por debajo del umbral establecido por el investigador, son descartados. A partir de los valores restantes se genera una matriz de adyacencia a partir de la cual se construye una red [@villaintroduction].](C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/fig13.png)
+
+Un ejemplo de este método de inferencia es el algoritmo del paquete WGCNA (*Weighted Gene Correlation Network Analysis*) de R, empleado en el análisis de correlaciones en redes pesadas [@butte1999mutual]. El algoritmo fue diseñado para el análisis de co-expresión de genes, permitiendo hallar módulos o clústeres de genes con expresión génica similar, mismos que en teoría podrían estar implicados en las mismas rutas metabólicas o rutas de señalización; esto bajo la premisa de que los genes suelen expresarse (transcribirse y traducirse) de forma coordinada y en proporciones similares cuando determinado proceso celular está sucediendo, potencialmente estarían involucrados en dicho proceso [@langfelder2008wgcna].
+
+El algoritmo WGCNA procesa las co-abundancias de los transcritos, expresadas en un *heatmap* como el peso asociado a las aristas, en un dendrograma o árbol. Esto permite clusterizar conjuntos de genes con una expresión similar entre las muestras a partir de las ramas principales del dendrograma [@zhang2005general].
+
+![**Figura 14:** El algoritmo WGCNA construye los módulos a partir de las abundancias de los transcritos en las muestras. Esto permite calcular la significancia media de cada módulo en conjunto con metadatos (como podrían ser categorías GO, que relacionan los genes con alguna característica o rasgo común y relacionar cada módulo con características clínicas). Entre mayor sea la significancia de un módulo mayor será la probabilidad de que dichos genes, representados en la red como nodos, estén relacionados. El dendrograma permite visualizar el agrupamiento jerárquico de estos genes en torno a las ramificaciones principales [@langfelder2008wgcna].](C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/fig14.png)
+
+Sin embargo, el hecho de que dos elementos de la matriz de similaridad posean una correlación alta no implica necesariamente que ambos estén directamente relacionados. Esto implica que el método anteriormente mencionado puede llevar a falsas interpretaciones en cuanto a cómo los nodos están conectados entre sí [@butte1999mutual]. Por ejemplo, si tenemos tres genes codificantes para tres productos ($a$, $b$ y $c$) que hemos analizado a lo largo de un centenar de muestras, y suponemos que el producto de $a$ regula directamente a $b$ y a $c$, esperamos que exista una fuerte correlación entre la expresión de estos genes [@villaintroduction]. Sin embargo, cuando calculamos la correlación entre los genes $b$ y $c$, obtenemos un resultado muy parecido al de los casos anteriores, teniendo estos una correlación fuerte a pesar de no estar directamente vinculados, pero sí relacionados indirectamente mediante su mutua regulación a través del producto del gen $a$.
+
+```{r warning=FALSE}
+library(igraph)
+#Gráfico de ejemplo
+gA <- graph(c("a", "b", "a", "c"))
+plot(gA, vertex.color=c( "red", "green", "yellow"))
+
+#Generamos un set de datos de prueba y calculamos la correlación entre los nodos.
+set.seed(2812)
+a <- rnorm(100, 0, 0.1)
+b <- 2*a-2+rnorm(100,0,0.1)
+cor(a,b)
+c <- 2*a+4+rnorm(100,0,0.1)
+cor(a,c)
+cor(c,b)
+```
+![**Figura 15:** Como podemos observar en el ejemplo, el producto del gen $a$ regula directamente a los productos de los genes $b$ y $c$, sin embargo, esto también provoca que exista una fuerte correlación entre los genes $b$ y $c$ a pesar de que la relación entre ambos sea en realidad indirecta.]()
+
+Claramente, este tipo de correlaciones indirectas puede llevar a interpretaciones erróneas de los datos experimentales, por lo cual es necesario disponer de métodos que permitan descartar este tipo de falsos positivos. Bajo esta perspectiva, los modelos gráficos gaussianos[@uhler2017gaussian], empleados para modelar las relaciones estadísticas entre variables de interés, son una herramienta útil para identificar y descartar interacciones indirectas gracias a que permiten estimar la dependencia condicional entre los nodos [@villaintroduction].
+
+En el siguiente ejemplo, basado en la simulación realizada previamente, podemos observar, además de que las correlaciones tienden a ser menos fuertes que en el primer modelo, que la correlación entre $b$ y $c$ posee valores negativos o significativamente más pequeños con respecto a los valores obtenidos para las correlaciones entre $a$ y los nodos $b$ y $c$. El modelo calcula las correlaciones parciales, es decir, la correlación entre los residuos de los modelos lineales generados a partir de las variables [@villaintroduction].
+
+```{r}
+#Correlaciones mediante un modelo lineal
+cor(lm(a~c)$residuals,lm(b~c)$residuals)
+cor(lm(a~b)$residuals,lm(c~b)$residuals)
+cor(lm(b~a)$residuals,lm(c~a)$residuals)
+```
+Es a partir de este principio que actúan algoritmos de inferencia de redes tales como ARACNE, CLR y MRNET, mismos que podemos encontrar en el paquete *minet* de R. Estos algoritmos, además, se combinan con estimadores de entropía con el fin de corregir los sesgos asociados al ruido y ajustar la varianza de los datos [@villaintroduction]. Las redes generadas a partir de ellos se conocen como redes de información mutua, pues que son el resultado de la inferencia de conexiones entre pares de nodos con de puntuaciones altas de información mutua; refiriéndose la correlación fuerte entre dos variables a partir de modelos de dependencia no-lineal, que con frecuencia se ajustan mejor a las nubes de datos de las variables que los modelos lineales. Por consiguiente, los algoritmos premian las interacciones directas sobre las indirectas, otorgando valores bajos a las correlaciones entre nodos no relacionados directamente [@meyer2008minet].
+
+El algoritmo CLR es una extensión del modelo clásico de redes de relevancia, pues calcula una puntuación empírica asociada a los valores de la matriz $MIM$ (Mutual Information Matrix), por lo que en lugar de tomar simplemente la información entre los nodos $X_i$ y $X_j$, considera también una puntuación $z_{ij}$ [@meyer2008minet].
+
+$$z_{ij}=\sqrt{Z_{i}^{2}+Z_{j}^{2}}$$
+
+$$z_{i}=max(0, \frac{I(X_{i};X_{j})-\mu _{i}}{\sigma _{i}})$$
+
+Donde $\mu _{i}$ corresponde a la media y $\sigma _{i}$ a la desviación estándar, mientras que la distribución empírica de los datos está representada por $I(X_{i};X_{k})$, donde $k$ es el número de muestras $(k=1,…,n)$. Los valores bajos de $z_{ij}$ ejercen una selección negativa sobre las aristas [@meyer2008minet].
+
+El algoritmo de ARACNe (*Algorithm for the Reconstruction of Accurate Cellular Networks*), por su parte, se fundamenta en la desigualdad del procesamiento de datos [@meyer2008minet]. El algoritmo comienza asignando a las conexiones los pesos obtenidos en la matriz $MIM$, para posteriormente analizar los datos por conjuntos de tres ($x_1$, $x_2$, $x_3$). Este algoritmo considera todos los tripletes posibles de nodos. Se consideran dos umbrales, uno asociado a la distancia entre los nodos y otro a la fuerza de la correlación. De las conexiones entre los tripletes de nodos, se elimina aquella con el valor de correlación más bajo y que esté por debajo del umbral de correlación, y que además posea un valor mayor al umbral asociado a la distancia entre nodos [@margolin2006aracne].
+
+Mientras tanto, el modelo MRNET selecciona las conexiones entre nodos mediante un método de máxima relevancia y mínima redundancia [@tourassi2001application]. La idea principal es que las conexiones directas se agrupan y clasifican en base a su relevancia, dada a partir de las correlaciones. Por consiguiente, mientras que las conexiones directas suelen catalogarse con facilidad en algún clúster, aquellas que son indirectas poseen un comportamiento redundante que las hace difíciles de agrupar en un clúster concreto, por lo cual el algoritmo las descarta [@peng2005feature].
+
+![**Figura 16:** Un gráfico de curvas PR (*Precision-Recall curves*) que relaciona la precisión de cada algoritmo (CLR, ARACNE y MRNET), es decir, el valor predictivo de los modelos $[TP / (TP + FP)]$ con la recuperación o sensibilidad del modelo $[TP / (TP + FN)]$. Podemos observar que el poder predictivo de los modelos disminuye con el aumento de la sensibilidad, en otras palabras, la capacidad del modelo de predecir los valores de la nube de datos disminuye conforme este se vuelve más selectivo respecto a aquellos valores que el algoritmo considera pertinente medir, al tiempo que descarta aquellos que no [@meyer2008minet].](C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/fig16.png)
+
+Cabe destacar que si bien, los algoritmos previamente mencionados fueron diseñados para inferir redes de co-expresión de genes, al emplear el principio de co-abundancias para generar dichas redes también permite su potencial uso en la generación de redes ecológicas bacterianas.
+
+Se han planteado numerosos métodos para la inferencia de redes ecológicas a partir bases de datos de microbiota, estos incluyen algoritmos de inferencia de matrices de similitud y disimilitud o distancias; por lo general empleando los coeficientes de correlación de Pearson o de Spearman [@chen2016two]. Ambos tipos de matrices son opuestos, pues mientras las primeras adquieren valores más altos entre mayor sea la correlación entre dos variables, las segundas lo hacen conforme aumenta la distancia entre las mismas. Sin embargo, por sí solos estos métodos carecen de la capacidad de diferenciar la presencia de correlaciones falsas, además de ser poco sensibles ante bajos números de muestra [@layeghifard2017disentangling].
+
+Debido a tales problemáticas se han planteado diversos modelos que buscan enfrentar las limitaciones de los primeros algoritmos. Podemos destacar el algoritmo SparCC (*Sparse Correlations for Compositional data*), mismo que calcula las correlaciones lineales de Pearson a partir de haber aplicado previamente una transformación logarítmica a los datos, esto con el propósito de normalizarlos y reducir así la oblicuidad que pueda presentar su distribución [@friedman2012inferring].
+
+$$y_{ij} = log\frac{x_{i}}{x_{j}} = log(x_{i}) - log(x_{j})$$
+El algoritmo asume previamente que el número de componentes, ya sean estos OTUs o genes, es alto; y que la mayoría de los componentes de la red no estarán fuertemente correlacionados, aunque el algoritmo es particularmente robusto a este último supuesto. A pesar de emplear la transformación logarítmica, el algoritmo no asume que los datos tengan estrictamente una distribución normal, sino que el uso de dicha transformación está motivado sencillamente por la facilidad que implica su implementación al procesar los datos. Esto tiene la ventaja de que el valor $y_{ij}$ contiene información de las abundancias de los componentes, al ser una razón entre cada par de nodos, además de que esta relación es independiente del resto de OTUs de la base de datos. Cabe destacar que las correlaciones en este algoritmo pueden adoptar cualquier valor real y no se limitan a valores positivos (pues considera también correlaciones negativas potencialmente asociadas a relaciones antagónicas), razón por la cual se considera un umbral para seleccionar las conexiones entre nodos [@friedman2012inferring]. Cabe destacar que tanto la correlación de Pearson como la de Spearman asumen la linealidad de los datos, por lo que si la correlación entre dos nodos es no-lineal, el algoritmo asigna una correlación baja.
 
