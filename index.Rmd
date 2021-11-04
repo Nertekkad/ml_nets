@@ -21,6 +21,9 @@ csl: ieee.csl
 ## Agradecimientos {-}
 ## Tabla de contenido {-}
 # Índice de cuadros y figuras {-}
+
+----
+
 ## Figuras {-}
 
 **Figura 1:** Red aleatoria y red de mundo pequeño [@schaeffer2007graph].
