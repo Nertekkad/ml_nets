@@ -13,7 +13,8 @@ description: |
   set in the _output.yml file.
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-# apa-6th-edition.csl
+# Activar APA e inactivar IEEE si se quiere cambiar estilo de cita.
+# csl: apa-6th-edition.csl
 csl: ieee.csl
 ---
 
