@@ -1,0 +1,14 @@
+# Resultados {-}
+
+## Resultados de la red escarabajo-solanácea {-}
+
+De los tres algoritmos empleados en la inferencia de redes, solo ARACNe y SparCC fueron empleados en la construcción de las redes multicapa, descartando el uso de SPIEC-EASI para posteriores análisis. Este último está basado en la independencia condicional de los nodos, por lo cual es mucho más selectivo, y dado el bajo número de muestra de algunas de las capas, el algoritmo arroja redes inconexas para tales casos. El análisis de la distribución del degree de las capas reveló que esta se asemeja a una distribución normal. Cabe destacar que la interconectividad de la red del escarabajo realizada con ARACNe presentó una interconectividad considerablemente menor a la de su homóloga realizada con SparCC.
+
+![**Figura 25:** Red multiplex (SparCC) de escarabajo-solanácea. El tamaño de los nodos está en función de la abundancia relativa de los nodos, cuyo color está asociado al *phylum* al que pertenecen.](C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/fig25.png)
+
+Las redes multicapa construidas con SparCC y ARACNe de escarabajo-solanácea, en ambos casos, revelaron a Proteobacteria como el *phylum* con mayor abundancia y distribución en las capas. Del mismo modo, su abundancia relativa en las muestras de tejidos fue preponderante.
+
+En las muestras extraídas del escarabajo se encontró una gran abundancia de las gamma-proteobacterias *Serratia* y *Pseudomonas*, pero una abundancia muy baja para el resto de OTUs presentes. La microbiota de la solanácea mostró una mayor diversidad de OTUs con abundancias altas, dentro de los que podemos destacar gamma-proteobacterias como *Pseudomonas*, *Pantoea*, *Siccibacter*, *Janthinobacterium* y *Massilia*.
+
+![**Figura 26:** Se analizó la distribución de los *phylum* en las muestras de los distintos tejidos, mostrando una presencia dominante de Proteobacteria en todas las muestras, seguido en menor medida por Actinobacteria y Bacteroidetes.](C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/fig26.png)
+
