@@ -30,7 +30,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="John Doe" />
 
 
-<meta name="date" content="2022-01-26" />
+<meta name="date" content="2022-01-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -168,6 +168,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="materiales-y-métodos.html"><a href="materiales-y-métodos.html"><i class="fa fa-check"></i>Materiales y métodos</a></li>
 <li class="chapter" data-level="" data-path="resultados.html"><a href="resultados.html"><i class="fa fa-check"></i>Resultados</a><ul>
 <li class="chapter" data-level="" data-path="resultados.html"><a href="resultados.html#resultados-de-la-red-escarabajo-solanácea"><i class="fa fa-check"></i>Resultados de la red escarabajo-solanácea</a></li>
+<li class="chapter" data-level="" data-path="resultados.html"><a href="resultados.html#resultados-de-las-redes-para-los-sujetos-a-y-b"><i class="fa fa-check"></i>Resultados de las redes para los sujetos A y B</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -204,6 +205,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <img src="C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/Fig26.PNG" alt="" />
 <p class="caption"><strong>Figura 26:</strong> Se analizó la distribución de los <em>phylum</em> en las muestras de los distintos tejidos, mostrando una presencia dominante de Proteobacteria en todas las muestras, seguido en menor medida por Actinobacteria y Bacteroidetes.</p>
 </div>
+<p>Las muestras de excremento e intestino de <em>Lema daturaphila</em> mostraron una diversidad de <em>phyla</em> muy baja ante la abundancia dominante de Proteobacteria. Lo mismo sucede con las muestras endófitas extraídas de la planta. Las muestras con mayor diversidad fueron aquellas extraídas de los huevos del insecto y las muestras de epífitas de la solanácea, que también mostraron una presencia importante de Actinobacteria y Bacteroidetes, y en menor medida también de Firmicutes. Estas muestras, incluyendo las de excremento, obtuvieron valores superiores a 0.4 con el índice de Shannon, lo que indica una complejidad biológica superior a la del resto de muestras. Sin embargo, dichas muestras junto a las de intestino, mostraron valores cercanos a 1 en la diversidad de Simpson. Lo anterior significa que, si bien algunas muestras mostraron abundancias significativas de distintos taxones, la dominancia de las proteobacterias sigue siendo preponderante en las muestras.</p>
+<p>El análisis de centralidades por <em>degree</em> reveló que, a pesar de la variación de las abundancias entre ambos organismos, las Proteobacterias, conservan un alto grado de centralidad entre capas, lo que sugiere que podrían tener una importancia a nivel funcional en la relación entre el escarabajo y su fuente de alimento. Dentro de este grupo podemos destacar a <em>Siccibacter</em> y <em>Pantoea</em> en la microbiota del escarabajo, mismas que también mostraron previamente una abundancia relativa alta. El género <em>Salmonella</em> también mostró un <em>degree</em> alto en la red SparCC, aunque no se encontrara dentro de los OTUs con mayor abundancia relativa.</p>
+<p>En el caso de la solanácea, la diversidad de especies con un <em>degree</em> elevado fue mucho mayor. Destacan alfa-proteobacterias como <em>Sphingomonas</em>, <em>Skermanella</em>, <em>Methylobacterium</em> y <em>Microvirga</em>, además de gamma-proteobacterias como <em>Janthinobacterium</em> y <em>Massilia</em>. En menor proporción se encontraron también bacterias ajenas al <em>phylum</em> Proteobacteria como <em>Actinoplanes</em>, <em>Hymenobacter</em> y <em>Cystobacter</em>, pertenecientes a Actinobacteria, Bacteroidetes y Myxococcota, respectivamente.</p>
+<div class="figure">
+<img src="C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/Fig27.PNG" alt="" />
+<p class="caption"><strong>Figura 27:</strong> Red multiplex de la centralidad por <em>degree</em> entre las capas. Nodos con tonos más próximos al rojo indican un mayor número de conexiones.</p>
+</div>
+<p>El análisis de centralidad por cercanía mostró valores altos para casi todos los nodos debido a la alta interconectividad de los <em>clusters</em>. Del mismo modo, no se encontró consenso al respecto de la centralidad por <em>betweenness</em> entre los dos algoritmos.</p>
+<div class="figure">
+<img src="C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/Fig28.PNG" alt="" />
+<p class="caption"><strong>Figura 28:</strong> Gráfico de la variación de los nodos entre las capas de la red bipartita. Los nodos marcados en rojo son aquellos que poseen diferencias significativas en las abundancias entre capas, mientras que los azules son aquellos que no poseen diferencias significativas entre ambas redes. Las conexiones representan la suma de interacciones en ambas capas.</p>
+</div>
+<p>No se encontraron diferencias significativas (p&lt;0.05) en los géneros <em>Kosakonia</em>, <em>Stenotrophomonas</em>, <em>Pseudomonas</em>, <em>Azomonas</em>, <em>Rhizobium</em>, <em>Achromobacter</em> y <em>Enterobacter</em>, todos pertenecientes al phylum Proteobacteria. Por el contrario, las proteobacterias <em>Serratia</em>, <em>Siccibacter</em>, <em>Escherichia</em>, <em>Shigella</em>, <em>Pantoea</em>, <em>Janthinobacterium</em>, <em>Methylobacterium</em> y <em>Salmonella</em>, además de <em>Bacillus</em> de Firmicutes, se encontraron con mayor abundancia en los tejidos del escarabajo. Sin embargo, las proteobacterias <em>Sphingomonas</em>, <em>Massilia</em>, <em>Rubellimicrobium</em> y <em>Skermanella</em>, junto a <em>Hymenobacter</em> de Bacteroidetes, tenían una abundancia mayor en los tejidos vegetales.</p>
+</div>
+<div id="resultados-de-las-redes-para-los-sujetos-a-y-b" class="section level2 unnumbered">
+<h2>Resultados de las redes para los sujetos A y B</h2>
 
 <div id="refs" class="references">
 <div>
