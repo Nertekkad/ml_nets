@@ -5,7 +5,7 @@
 
 ## Definición y generalidades de una red {-}
 
-Una red se define como un conjunto de elementos o nodos, que denotaré por $V$, que se conectan entre sí mediante aristas  que representaré por el conjunto $E$ [@bianconi2018multilayer]. $G=(V, E)$
+Una red se define como un conjunto de elementos o nodos, que denotaré como $V$, que se conectan entre sí mediante aristas representadas por el conjunto $E$ [@bianconi2018multilayer]. $G=(V, E)$
 Donde $N=|V|$ corresponde al conjunto de nodos que componen la red, y $L=|E|$ al conjunto de aristas que conectan los nodos o vértices [@bianconi2018multilayer].
 $$V=\left \{ i|i\in \left \{ 1,2,...,N \right. \right.\left. \left.  \right \} \right \}$$
 

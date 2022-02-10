@@ -28,3 +28,14 @@ No se encontraron diferencias significativas (p<0.05) en los géneros *Kosakonia
 
 ## Resultados de las redes para los sujetos A y B {-}
 
+Al igual que en el caso anterior, las redes fueron generadas únicamente con los algoritmos ARACNe y SparCC, pues no fue posible inferir las redes con SPIEC-EASI para la segunda capa de ambos sujetos debido a que, al tener un número de muestra bajo, el algoritmo no fue capaz de encontrar correlaciones entre sus componentes. La interconectividad de las redes generadas con ARACNe fue menor que en las redes generadas con SparCC. El análisis de la distribución del degree en las redes ARACNe reveló que se trata de redes de mundo pequeño, donde la mayoría de las conexiones están concentradas en unos pocos nodos y la mayoría de los nodos tiene pocas conexiones. Ninguna de las redes SparCC presentó una distribución normal. En el caso de la diversidad Simpson como en la diversidad de Shannon, solo las muestras correspondientes a los periodos de enfermedad poseían una distribución normal en contraste con los estadios basales, lo que podría indicar un cambio en la dinámica de las poblaciones al presentarse la disbiosis.
+
+Tanto en el sujeto A como en el sujeto B, la presencia de Firmicutes y Bacteroidetes era preponderante sobre el resto de phyla, razón por la cual todas las muestras obtuvieron valores cercanos a la unidad en la prueba de diversidad de Simpson, en contraste con los valores bajos de diversidad de Shannon. En el sujeto A hubo un aumento significativo en la abundancia relativa de las proteobacterias en detrimento de Firmicutes, así como una reducción de Actinobacteria, durante el periodo de viaje. Durante el periodo de infección por Salmonella en el sujeto B, también se registró un descenso en la abundancia relativa de Firmicutes, en contraste con un aumento en Bacteroidetes. Al igual que en el sujeto A, se identificó una reducción en la proporción de Actinobacteria. A pesar de que tras el periodo de infección hay un aumento de Firmicutes con respecto a Bacteroidetes, no se recuperan los valores previos y la abundancia relativa de Actinobacteria continúa siendo baja con respecto a sus valores iniciales.
+
+![**Figura 30:** Distribución de las abundancias de los phyla en el sujeto A a lo largo de las tres capas, correspondientes al periodo previo al viaje, durante el viaje y posterior al viaje. Es durante el periodo de viaje en el cual el sujeto sufrió una alteración en la composición de su microbiota, derivada de un cambio en su dieta habitual.](C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/fig30.png)
+
+
+
+
+
+
