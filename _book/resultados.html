@@ -55,6 +55,70 @@
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -73,12 +137,14 @@
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like <span>https://bookdown.org/yihui/bookdown</span></a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Resumen</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i>Summary</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#agradecimientos"><i class="fa fa-check"></i>Agradecimientos</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#tabla-de-contenido"><i class="fa fa-check"></i>Tabla de contenido</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#figuras"><i class="fa fa-check"></i>Figuras</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#tablas"><i class="fa fa-check"></i>Tablas</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="índice-de-cuadros-y-figuras.html"><a href="índice-de-cuadros-y-figuras.html"><i class="fa fa-check"></i>Índice de cuadros y figuras</a><ul>
+<li class="chapter" data-level="" data-path="índice-de-cuadros-y-figuras.html"><a href="índice-de-cuadros-y-figuras.html#figuras"><i class="fa fa-check"></i>Figuras</a></li>
+<li class="chapter" data-level="" data-path="índice-de-cuadros-y-figuras.html"><a href="índice-de-cuadros-y-figuras.html#tablas"><i class="fa fa-check"></i>Tablas</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a><ul>
 <li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#objetivo-general"><i class="fa fa-check"></i>Objetivo general</a></li>
@@ -149,58 +215,395 @@
 </div>
 <div id="resultados-de-las-redes-para-los-sujetos-a-y-b" class="section level2 unnumbered">
 <h2>Resultados de las redes para los sujetos A y B</h2>
-<p>Al igual que en el caso anterior, las redes fueron generadas únicamente con los algoritmos ARACNe y SparCC, pues no fue posible inferir las redes con SPIEC-EASI para la segunda capa de ambos sujetos debido a que, al tener un número de muestra bajo, el algoritmo no fue capaz de encontrar correlaciones entre sus componentes. La interconectividad de las redes generadas con ARACNe fue menor que en las redes generadas con SparCC. El análisis de la distribución del degree en las redes ARACNe reveló que se trata de redes de mundo pequeño, donde la mayoría de las conexiones están concentradas en unos pocos nodos y la mayoría de los nodos tiene pocas conexiones. Ninguna de las redes SparCC presentó una distribución normal. En el caso de la diversidad Simpson como en la diversidad de Shannon, solo las muestras correspondientes a los periodos de enfermedad poseían una distribución normal en contraste con los estadios basales, lo que podría indicar un cambio en la dinámica de las poblaciones al presentarse la disbiosis.</p>
-<p>Tanto en el sujeto A como en el sujeto B, la presencia de Firmicutes y Bacteroidetes era preponderante sobre el resto de phyla, razón por la cual todas las muestras obtuvieron valores cercanos a la unidad en la prueba de diversidad de Simpson, en contraste con los valores bajos de diversidad de Shannon. En el sujeto A hubo un aumento significativo en la abundancia relativa de las proteobacterias en detrimento de Firmicutes, así como una reducción de Actinobacteria, durante el periodo de viaje. Durante el periodo de infección por Salmonella en el sujeto B, también se registró un descenso en la abundancia relativa de Firmicutes, en contraste con un aumento en Bacteroidetes. Al igual que en el sujeto A, se identificó una reducción en la proporción de Actinobacteria. A pesar de que tras el periodo de infección hay un aumento de Firmicutes con respecto a Bacteroidetes, no se recuperan los valores previos y la abundancia relativa de Actinobacteria continúa siendo baja con respecto a sus valores iniciales.</p>
+<p>Al igual que en el caso anterior, las redes fueron generadas únicamente con los algoritmos ARACNe y SparCC, pues no fue posible inferir las redes con SPIEC-EASI para la segunda capa de ambos sujetos debido a que, al tener un número de muestra bajo, el algoritmo no fue capaz de encontrar correlaciones entre sus componentes. La interconectividad de las redes generadas con ARACNe fue menor que en las redes generadas con SparCC. El análisis de la distribución del <em>degree</em> en las redes ARACNe reveló que se trata de redes de mundo pequeño, donde la mayoría de las conexiones están concentradas en unos pocos nodos y la mayoría de los nodos tiene pocas conexiones. Ninguna de las redes SparCC presentó una distribución normal. En el caso de la diversidad Simpson como en la diversidad de Shannon, solo las muestras correspondientes a los periodos de enfermedad poseían una distribución normal en contraste con los estadios basales, lo que podría indicar un cambio en la dinámica de las poblaciones al presentarse la disbiosis.</p>
+<p>Tanto en el sujeto A como en el sujeto B, la presencia de Firmicutes y Bacteroidetes era preponderante sobre el resto de <em>phyla</em>, razón por la cual todas las muestras obtuvieron valores cercanos a la unidad en la prueba de diversidad de Simpson, en contraste con los valores bajos de diversidad de Shannon. En el sujeto A hubo un aumento significativo en la abundancia relativa de las proteobacterias en detrimento de Firmicutes, así como una reducción de Actinobacteria, durante el periodo de viaje. Durante el periodo de infección por <em>Salmonella</em> en el sujeto B, también se registró un descenso en la abundancia relativa de Firmicutes, en contraste con un aumento en Bacteroidetes. Al igual que en el sujeto A, se identificó una reducción en la proporción de Actinobacteria. A pesar de que tras el periodo de infección hay un aumento de Firmicutes con respecto a Bacteroidetes, no se recuperan los valores previos y la abundancia relativa de Actinobacteria continúa siendo baja con respecto a sus valores iniciales.</p>
 <div class="figure">
 <img src="C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/Fig30.PNG" alt="" />
-<p class="caption"><strong>Figura 30:</strong> Distribución de las abundancias de los phyla en el sujeto A a lo largo de las tres capas, correspondientes al periodo previo al viaje, durante el viaje y posterior al viaje. Es durante el periodo de viaje en el cual el sujeto sufrió una alteración en la composición de su microbiota, derivada de un cambio en su dieta habitual.</p>
+<p class="caption"><strong>Figura 30:</strong> Distribución de las abundancias de los <em>phyla</em> en el sujeto A a lo largo de las tres capas, correspondientes al periodo previo al viaje, durante el viaje y posterior al viaje. Es durante el periodo de viaje en el cual el sujeto sufrió una alteración en la composición de su microbiota, derivada de un cambio en su dieta habitual.</p>
 </div>
+<p>En el sujeto A los géneros <em>Bacteroides</em> y <em>Faecalibacterium</em> se mantuvieron como los más abundantes en todas las capas. También se detectaron abundancias altas de <em>Clostridium</em> y <em>Blautia</em>. La abundancia de <em>Bifidobacterium</em> decayó durante el periodo de disbiosis, aunque se recuperó después, a diferencia de las abundancias de <em>Coprococcus</em>, cuya población no recuperó las abundancias iniciales. Durante la disbiosis se detectó un aumento considerable en las abundancias de <em>Escherichia</em>, mismas que se redujeron tras el viaje. Por su parte, en el sujeto B, a pesar de tratarse de los dos géneros con mayor abundancia relativa, la presencia de <em>Bacteroides</em> en las muestras fue mucho mayor que la de <em>Faecalibacterium</em>. Si bien, las abundancias de ambos géneros se mantuvieron constantes, hubo un aumento en la abundancia relativa de <em>Faecalibacterium</em> en el periodo post-infección. En las redes SparCC los géneros <em>Bacteroides</em>, <em>Faecalibacterium</em>, <em>Clostridium</em> y <em>Blautia</em> mantuvieron valores altos de centralidad por <em>degree</em> en todas las capas de ambas redes temporales.</p>
+<p>Las redes generadas con ARACNe presentaron comunidades con nodos altamente interconectados pero aislados del resto de nodos de la red, una particularidad que solo se presentó en las capas correspondientes a la disbiosis, en contraste con una mayor interconectividad de toda la red en las demás capas. La presencia de dichas comunidades se conservaron tras analizar el agrupamiento de las capas con los algoritmos <em>Louvain</em>, <em>optimal</em> y <em>fast-greedy</em>. Cabe destacar que en el sujeto B, tras el periodo de disbiosis, la arquitectura de la red no se recuperó al encontrarse los nodos menos interconectados que al inicio del muestreo, en contraste con lo sucedido en el sujeto A.</p>
+<p>En las redes ARACNe del sujeto A destacaban dos grandes comunidades altamente interconectadas en la capa de disbiosis. Ambas comunidades tenían una importante presencia de proteobacterias como <em>Thauera</em>, <em>Pseudoxanthomonas</em>, <em>Brachymonas</em>, <em>Polynucleobacter</em>, <em>Rhodoplanes</em>, <em>Massilia</em>, <em>Methylotenera</em> y <em>Rheinheimera</em>. Cabe destacar que las beta-proteobacterias fueron la clase más abundante en este grupo. Bacteroidetes también tuvo una presencia importante en dichas comunidades, destacando géneros como <em>Hymenobacter</em>, <em>Flavisolibacter</em>, <em>Cytophaga</em> y <em>Pedobacter</em>. Firmicutes también tuvo presencia con géneros como <em>Alicyclobacillus</em>, <em>Paenibacillus</em> y <em>Caloramator</em>. Finalmente podemos mencionar la presencia de algunas actinobacterias como <em>Rathayibacter</em>, <em>Microcella</em> y <em>Yonghaparkia</em>.</p>
+<p>En los estadios basales del sujeto A, solo se encontraron comunidades pequeñas de entre tres y seis elementos. De la primera capa podemos destacar una comunidad formada por los géneros <em>Rhizobium</em>, <em>Erysipelothrix</em>, <em>Williamsia</em>, <em>Marinilactibacillus</em>, <em>Cronobacter</em> y <em>Providencia</em>. En la tercera capa no se encontraron comunidades mayores a cuatro elementos. Tales comunidades no se conservaron en las redes SparCC, donde la mayoría de los OTUs identificados como pertenecientes a las comunidades encontradas en las redes ARACNe, se hayaron como nodos aislados en las redes SparCC. La única excepción a esta regla fueron las comunidades de la segunda capa, cuyos elementos estaban integrados a comunidades de mayor tamaño en las redes SparCC.</p>
+<p>En análisis de clusterización de las redes SparCC del sujeto A mostró grandes comunidades de bacterias, cuya composición se mantuvo similar a lo largo de todas las capas a pesar de los cambios en las abundancias relativas de las muestras. Géneros muy abundantes en las muestras como <em>Bacteroides</em>, <em>Faecalibacterium</em>, <em>Clostridium</em> y <em>Blautia</em> obtuvieron valores altos de <em>degree</em>, lo que podría indicar que poseen una importancia destacable dentro de las comunidades encontradas. Cabe destacar que si bien, las comunidades encontradas tenían una presencia importante de Firmicutes y Proteobacteria, formando ambos grupos dos comunidades de gran tamaño, la presencia de Bacteroidetes, a pesar de su abundancia relativa alta en contraste con la mayoría de <em>phyla</em>, fue marginal. Es importante destacar que a pesar de la reducción en las abundancias de Firmicutes y el aumento de Proteobacteria y Bacteroidetes durante el periodo de disbiosis, Bacteroidetes continuó teniendo una presencia marginal en las clusterizaciones encontradas.</p>
+<p>Sin embargo, los algoritmos NMI y Rand empleados para analizar la correlación de la clusterización entre capas no arrojaron diferencias significativas, lo que podría estar asociado al gran número de nodos independientes presentes tanto en las redes SparCC como en las de ARACNe.</p>
+<div class="figure">
+<img src="C:/Users/LaV_V/OneDrive/Documentos/Tesis/Images/Fig31.PNG" alt="" />
+<p class="caption"><strong>Figura 31:</strong> Capas de las redes temporales de los sujetos A y B. Las regiones de la segunda capa de las redes ARACNe marcadas en rojo, corresponden a zonas con una alta densidad del <em>degree</em>, donde fueron hayadas comunidades de bacterias altamente interconectadas compuestas principalmente por géneros de Firmicutes y Proteobacteria.</p>
+</div>
+<p>En el sujeto B, se identificó una reducción significativa en las abundancias de <em>Bacteroides</em>, <em>Actinobacillus</em>, <em>Phascolarctobacterium</em>, <em>Clostridium</em>, <em>Streptococcus</em>, <em>Oscillospira</em>, <em>Alistipes</em> y <em>Parabacteroides</em> en el sujeto A entre la primera y la segunda capa, en contraste con un aumento de <em>Erwinia</em> durante el periodo de disbiosis. Las abundancias de dichos géneros recuperan sus proporciones originales tras el periodo de disbiosis. En el sujeto B el cambio en las abundancias fue mayor, especialmente entre la segunda y la tercera capa. De los géneros que se vieron modificados, podemos destacar a <em>Bacteroides</em>, <em>Hylemonella</em>, <em>Actinobacillus</em>, <em>Erwinia</em>, <em>Phascolarctobacterium</em>, <em>Clostridium</em>, <em>Ruminococcus</em>, <em>Coprococcus</em>, <em>Eubacterium</em>, <em>Faecalibacterium</em> y <em>Akkermansia</em>. A diferencia de lo sucedido con el sujeto A, en este caso las abundancias de los géneros no solo no se recuperaron tras el periodo de disbiosis, sino que la mayoría de estos presentaron una abundancia incluso menor a la registrada durante el periodo de infección.</p>
+<p>A pesar de la reducción de Firmicutes durante la infección por <em>Salmonella</em>, la presencia de dicho <em>phylum</em> fue destacable en los <em>clusters</em> hallados en las redes ARACNe de la capa de disbiosis. Dentro de los géneros de Firmicutes identificados como pertenecientes a las comunidades del periodo de disbiosis, se incluyen <em>Peptococcus</em>, <em>Peptostreptococcus</em>, <em>Facklamia</em>, <em>Lachnospira</em>, <em>Vagococcus</em>, <em>Clostridium</em>, <em>Blautia</em>, <em>Ruminococcus</em>, <em>Anaerostipes</em>, <em>Eubacterium</em>, <em>Weissella</em> y <em>Faecalibacterium</em>. También destacó la presencia de proteobacterias como <em>Vogesella</em>, <em>Vitreoscilla</em>, <em>Serratia</em>, <em>Desulfovibrio</em>, <em>Aquamonas</em>, <em>Methyloversatilis</em>, <em>Aquitalea</em> y <em>Microvirgula</em>. La presencia de Bacteroidetes y Actinobacteria en tales comunidades, como también se observó en el sujeto A, fue marginal a pesar de la alta abundancia relativa de ambos <em>phyla</em> en las muestras.</p>
+<p>Si bien, la tercera capa del sujeto B mostró comunidades de bacterias pequeñas, tal y como también se observó en los estadios basales del sujeto A, en la primera capa se encontró una macrocomunidad compuesta por un gran número de géneros. Al igual que con las comunidades encontradas en las redes del sujeto A, la presencia de Proteobacteria y Firmicutres fue preponderante en todos los <em>clusters</em>, un patrón presente tanto en las redes ARACNe como en las redes SparCC. Dentro de las proteobacterias halladas en los <em>clusters</em> de la primera capa de las redes generadas por ambos algoritmos, destacamos los casos de <em>Vogesella</em>, <em>Vitreoscilla</em>, <em>Serratia</em>, <em>Desulfovibrio</em>, <em>Methyloversatilis</em> y <em>Aquamonas</em>. De los géneros pertenecientes a Firmicutes podemos destacar a <em>Arcanobacterium</em>, <em>Peptococcus</em>, <em>Peptostreptococcus</em>, <em>Facklamia</em>, <em>Lachnospira</em> y <em>Vagococcus</em>, mismos que también estuvieron presentes en los <em>clusters</em> de la red SparCC. En ambos casos, en la tercera capa se encontraron comunidades de menor tamaño que las halladas en la primera capa, sin embargo, a diferencia del caso anterior no se encontró un consenso en cuanto a los elementos constituyentes de los <em>clusters</em> hallados con ambos algoritmos. A pesar de ello, cabe destacar que tales comunidades contenían una presencia preponderante de Firmicutes y Proteobacteria. Al igual que en las redes del sujeto A, la presencia de Bacteroidetes en las comunidades del sujeto B fue marginal. Sin embargo, sí se encontró una presencia importante en todas las capas de Actinobacteria, destacando géneros como <em>Arcanobacterium</em>, <em>Rothia</em>, <em>Microvirgula</em>, <em>Bifidobacterium</em> y <em>Varibaculum</em>, presentes en las comunidades halladas con ambos algoritmos. Tanto en las redes ARACNe como en las SparCC, en la segunda capa, referente al periodo de infección, se encontraron comunidades de mayor tamaño, comparadas con las capas del estado basal. Tales comunidades, sin embargo, presentaron una presencia importante de Firmicutes y Proteobacteria, como en los casos anteriores, además de una presencia considerablemente menor de Bacteroidetes.</p>
 
 <div id="refs" class="references">
 <div>
-<p>[1] L. Viniegra Velázquez, “El reduccionismo cientı́fico y el control de las conciencias: Parte i,” <em>Boletı́n Médico del Hospital Infantil de México</em>, vol. 71, no. 4, pp. 252–257, 2014.</p>
+<p>[1] S. E. Schaeffer, “Graph clustering,” <em>Computer science review</em>, vol. 1, no. 1, pp. 27–64, 2007.</p>
 </div>
 <div>
-<p>[2] P. W. Anderson, “More is different,” <em>Science</em>, vol. 177, no. 4047, pp. 393–396, 1972.</p>
+<p>[2] D. J. Watts and S. H. Strogatz, “Collective dynamics of ‘small-world’networks,” <em>nature</em>, vol. 393, no. 6684, pp. 440–442, 1998.</p>
 </div>
 <div>
-<p>[3] B. Falkenburg and M. Morrison, “Why more is different,” <em>Philosophical Issues in Condensed Matter Physics and Complex Systems. Springer, Berlin, Heidelberg</em>, 2015.</p>
+<p>[3] F. V. Farahani, W. Karwowski, and N. R. Lighthall, “Application of graph theory for identifying connectivity patterns in human brain networks: A systematic review,” <em>frontiers in Neuroscience</em>, vol. 13, p. 585, 2019.</p>
 </div>
 <div>
-<p>[4] M. Gardner, “The fantastic combinations of jhon conway’s new solitaire game’Life,” <em>Sc. Am.</em>, vol. 223, pp. 20–123, 1970.</p>
+<p>[4] G. Bianconi, <em>Multilayer networks: Structure and function</em>. Oxford university press, 2018.</p>
 </div>
 <div>
-<p>[5] J. Von Neuman <em>et al.</em>, “Theory of self-reproducing automata,” 1966.</p>
+<p>[5] J. F. Padgett and C. K. Ansell, “Robust action and the rise of the medici, 1400-1434,” <em>American journal of sociology</em>, vol. 98, no. 6, pp. 1259–1319, 1993.</p>
 </div>
 <div>
-<p>[6] N. Baas, “Emergence, hierarchies and hyperstructures. Artifidal ufe, n’Ill, vol,” <em>Addison-Wesley</em>, vol. 515, p. 537, 1994.</p>
+<p>[6] E. Cozzo, G. F. de Arruda, F. A. Rodrigues, and Y. Moreno, “Multilayer networks: Metrics and spectral properties,” in <em>Interconnected networks</em>, Springer, 2016, pp. 17–35.</p>
 </div>
 <div>
-<p>[7] G. H. Lewes, “Problems of life and mind, first series: The foundations of a creed, vol 2.” 1891.</p>
+<p>[7] E. Cozzo <em>et al.</em>, “Clustering coefficients in multiplex networks,” <em>arXiv preprint arXiv:1307.6780</em>, 2013.</p>
 </div>
 <div>
-<p>[8] O. Mason and M. Verwoerd, “Graph theory and networks in biology,” <em>IET systems biology</em>, vol. 1, no. 2, pp. 89–119, 2007.</p>
+<p>[8] A. Aleta, S. Meloni, and Y. Moreno, “A multilayer perspective for the analysis of urban transportation systems,” <em>Scientific reports</em>, vol. 7, no. 1, pp. 1–9, 2017.</p>
 </div>
 <div>
-<p>[9] J. Stelling, U. Sauer, Z. Szallasi, F. J. Doyle III, and J. Doyle, “Robustness of cellular functions,” <em>Cell</em>, vol. 118, no. 6, pp. 675–685, 2004.</p>
+<p>[9] J. Sanz, C.-Y. Xia, S. Meloni, and Y. Moreno, “Dynamics of interacting diseases,” <em>Physical Review X</em>, vol. 4, no. 4, p. 041005, 2014.</p>
 </div>
 <div>
-<p>[10] Y.-Y. Liu, J.-J. Slotine, and A.-L. Barabási, “Controllability of complex networks,” <em>nature</em>, vol. 473, no. 7346, pp. 167–173, 2011.</p>
+<p>[10] Y. V. Sun and Y.-J. Hu, “Integrative analysis of multi-omics data for discovery and functional studies of complex human diseases,” <em>Advances in genetics</em>, vol. 93, pp. 147–190, 2016.</p>
 </div>
 <div>
-<p>[11] W. Zheng, D. Wang, and X. Zou, “Control of multilayer biological networks and applied to target identification of complex diseases,” <em>BMC bioinformatics</em>, vol. 20, no. 1, pp. 1–12, 2019.</p>
+<p>[11] M. Schleuning <em>et al.</em>, “Trait-based assessments of climate-change impacts on interacting species,” <em>Trends in Ecology &amp; Evolution</em>, vol. 35, no. 4, pp. 319–328, 2020.</p>
 </div>
 <div>
-<p>[12] G. Bianconi, <em>Multilayer networks: Structure and function</em>. Oxford university press, 2018.</p>
+<p>[12] N. Villa-Vialaneix-nathalie, “An introduction to network inference and mining.”</p>
 </div>
 <div>
-<p>[13] L. A. Zuzek, H. E. Stanley, and L. A. Braunstein, “Epidemic model with isolation in multilayer networks,” <em>Scientific reports</em>, vol. 5, no. 1, pp. 1–7, 2015.</p>
+<p>[13] P. Langfelder and S. Horvath, “WGCNA: An r package for weighted correlation network analysis,” <em>BMC bioinformatics</em>, vol. 9, no. 1, pp. 1–13, 2008.</p>
 </div>
 <div>
-<p>[14] A. Aleta and Y. Moreno, “Multilayer networks in a nutshell,” <em>Annual Review of Condensed Matter Physics</em>, vol. 10, pp. 45–62, 2019.</p>
+<p>[14] P. E. Meyer, F. Lafitte, and G. Bontempi, “Minet: AR/bioconductor package for inferring large transcriptional networks using mutual information,” <em>BMC bioinformatics</em>, vol. 9, no. 1, pp. 1–10, 2008.</p>
 </div>
 <div>
-<p>[15] R. Albert and A.-L. Barabási, “Statistical mechanics of complex networks,” <em>Reviews of modern physics</em>, vol. 74, no. 1, p. 47, 2002.</p>
+<p>[15] J. Friedman and E. J. Alm, “Inferring correlation networks from genomic survey data,” 2012.</p>
+</div>
+<div>
+<p>[16] Z. D. Kurtz, C. L. Müller, E. R. Miraldi, D. R. Littman, M. J. Blaser, and R. A. Bonneau, “Sparse and compositionally robust inference of microbial ecological networks,” <em>PLoS computational biology</em>, vol. 11, no. 5, p. e1004226, 2015.</p>
+</div>
+<div>
+<p>[17] H. Hirano and K. Takemoto, “Difficulty in inferring microbial community structure based on co-occurrence network approaches,” <em>BMC bioinformatics</em>, vol. 20, no. 1, pp. 1–14, 2019.</p>
+</div>
+<div>
+<p>[18] F. Del Chierico <em>et al.</em>, “Gut microbiota profiling of pediatric nonalcoholic fatty liver disease and obese patients unveiled by an integrated meta-omics-based approach,” <em>Hepatology</em>, vol. 65, no. 2, pp. 451–464, 2017.</p>
+</div>
+<div>
+<p>[19] M. I. Smith <em>et al.</em>, “Gut microbiomes of malawian twin pairs discordant for kwashiorkor,” <em>Science</em>, vol. 339, no. 6119, pp. 548–554, 2013.</p>
+</div>
+<div>
+<p>[20] H. Zheng, H. Wang, R. J. Dewhurst, and R. Roehe, “Improving the inference of co-occurrence networks in the bovine rumen microbiome,” <em>IEEE/ACM transactions on computational biology and bioinformatics</em>, vol. 17, no. 3, pp. 858–867, 2018.</p>
+</div>
+<div>
+<p>[21] L. Viniegra Velázquez, “El reduccionismo cientı́fico y el control de las conciencias: Parte i,” <em>Boletı́n Médico del Hospital Infantil de México</em>, vol. 71, no. 4, pp. 252–257, 2014.</p>
+</div>
+<div>
+<p>[22] P. W. Anderson, “More is different,” <em>Science</em>, vol. 177, no. 4047, pp. 393–396, 1972.</p>
+</div>
+<div>
+<p>[23] B. Falkenburg and M. Morrison, “Why more is different,” <em>Philosophical Issues in Condensed Matter Physics and Complex Systems. Springer, Berlin, Heidelberg</em>, 2015.</p>
+</div>
+<div>
+<p>[24] M. Gardner, “The fantastic combinations of jhon conway’s new solitaire game’Life,” <em>Sc. Am.</em>, vol. 223, pp. 20–123, 1970.</p>
+</div>
+<div>
+<p>[25] J. Von Neuman <em>et al.</em>, “Theory of self-reproducing automata,” 1966.</p>
+</div>
+<div>
+<p>[26] N. Baas, “Emergence, hierarchies and hyperstructures. Artifidal ufe, n’Ill, vol,” <em>Addison-Wesley</em>, vol. 515, p. 537, 1994.</p>
+</div>
+<div>
+<p>[27] G. H. Lewes, “Problems of life and mind, first series: The foundations of a creed, vol 2.” 1891.</p>
+</div>
+<div>
+<p>[28] O. Mason and M. Verwoerd, “Graph theory and networks in biology,” <em>IET systems biology</em>, vol. 1, no. 2, pp. 89–119, 2007.</p>
+</div>
+<div>
+<p>[29] J. Stelling, U. Sauer, Z. Szallasi, F. J. Doyle III, and J. Doyle, “Robustness of cellular functions,” <em>Cell</em>, vol. 118, no. 6, pp. 675–685, 2004.</p>
+</div>
+<div>
+<p>[30] Y.-Y. Liu, J.-J. Slotine, and A.-L. Barabási, “Controllability of complex networks,” <em>nature</em>, vol. 473, no. 7346, pp. 167–173, 2011.</p>
+</div>
+<div>
+<p>[31] W. Zheng, D. Wang, and X. Zou, “Control of multilayer biological networks and applied to target identification of complex diseases,” <em>BMC bioinformatics</em>, vol. 20, no. 1, pp. 1–12, 2019.</p>
+</div>
+<div>
+<p>[32] L. A. Zuzek, H. E. Stanley, and L. A. Braunstein, “Epidemic model with isolation in multilayer networks,” <em>Scientific reports</em>, vol. 5, no. 1, pp. 1–7, 2015.</p>
+</div>
+<div>
+<p>[33] A. Aleta and Y. Moreno, “Multilayer networks in a nutshell,” <em>Annual Review of Condensed Matter Physics</em>, vol. 10, pp. 45–62, 2019.</p>
+</div>
+<div>
+<p>[34] R. Albert and A.-L. Barabási, “Statistical mechanics of complex networks,” <em>Reviews of modern physics</em>, vol. 74, no. 1, p. 47, 2002.</p>
+</div>
+<div>
+<p>[35] M. E. Newman, A.-L. E. Barabási, and D. J. Watts, <em>The structure and dynamics of networks.</em> Princeton university press, 2006.</p>
+</div>
+<div>
+<p>[36] Y. Wang, E. Ghumare, R. Vandenberghe, and P. Dupont, “Comparison of different generalizations of clustering coefficient and local efficiency for weighted undirected graphs,” <em>Neural computation</em>, vol. 29, no. 2, pp. 313–331, 2017.</p>
+</div>
+<div>
+<p>[37] M. Newman and G. Barkema, “Oxford university press; new york: 2010,” <em>Networks: An Introduction.[Google Scholar]</em>.</p>
+</div>
+<div>
+<p>[38] A. B. Das, “Small-world networks of prognostic genes associated with lung adenocarcinoma development,” <em>Genomics</em>, vol. 112, no. 6, pp. 4078–4088, 2020.</p>
+</div>
+<div>
+<p>[39] S. V. Buldyrev, R. Parshani, G. Paul, H. E. Stanley, and S. Havlin, “Catastrophic cascade of failures in interdependent networks,” <em>Nature</em>, vol. 464, no. 7291, pp. 1025–1028, 2010.</p>
+</div>
+<div>
+<p>[40] R. Kanawati, “Multiplex network mining: A brief survey.” <em>IEEE Intell. Informatics Bull.</em>, vol. 16, no. 1, pp. 24–27, 2015.</p>
+</div>
+<div>
+<p>[41] H. Arda, A. Arenas, A. Sharma, and others, “The multiplex network of human diseases,” <em>NPJ Systems Biology and Applications</em>, vol. 5, no. 1, 2019.</p>
+</div>
+<div>
+<p>[42] P. Holme and J. Saramäki, “Temporal networks,” <em>Physics reports</em>, vol. 519, no. 3, pp. 97–125, 2012.</p>
+</div>
+<div>
+<p>[43] A. Barrat, M. Barthelemy, and A. Vespignani, <em>Dynamical processes on complex networks</em>. Cambridge university press, 2008.</p>
+</div>
+<div>
+<p>[44] D. Y. Kenett, M. Perc, and S. Boccaletti, “Networks of networks–an introduction,” <em>Chaos, Solitons &amp; Fractals</em>, vol. 80, pp. 1–6, 2015.</p>
+</div>
+<div>
+<p>[45] S. Gomez, A. Diaz-Guilera, J. Gomez-Gardenes, C. J. Perez-Vicente, Y. Moreno, and A. Arenas, “Diffusion dynamics on multiplex networks,” <em>Physical review letters</em>, vol. 110, no. 2, p. 028701, 2013.</p>
+</div>
+<div>
+<p>[46] J. Iacovacci, C. Rahmede, A. Arenas, and G. Bianconi, “Functional multiplex pagerank,” <em>EPL (Europhysics Letters)</em>, vol. 116, no. 2, p. 28004, 2016.</p>
+</div>
+<div>
+<p>[47] A. Lancichinetti and S. Fortunato, “Consensus clustering in complex networks,” <em>Scientific reports</em>, vol. 2, no. 1, pp. 1–7, 2012.</p>
+</div>
+<div>
+<p>[48] J. F. Donges, H. C. Schultz, N. Marwan, Y. Zou, and J. Kurths, “Investigating the topology of interacting networks,” <em>The European Physical Journal B</em>, vol. 84, no. 4, pp. 635–651, 2011.</p>
+</div>
+<div>
+<p>[49] Y.-Y. Liu and A.-L. Barabási, “Control principles of complex systems,” <em>Reviews of Modern Physics</em>, vol. 88, no. 3, p. 035006, 2016.</p>
+</div>
+<div>
+<p>[50] T. O’Connor, “Emergent properties,” <em>American Philosophical Quarterly</em>, vol. 31, no. 2, pp. 91–104, 1994.</p>
+</div>
+<div>
+<p>[51] E. Lazega and P. E. Pattison, “Multiplexity, generalized exchange and cooperation in organizations: A case study,” <em>Social networks</em>, vol. 21, no. 1, pp. 67–90, 1999.</p>
+</div>
+<div>
+<p>[52] B. Bentley <em>et al.</em>, “The multilayer connectome of caenorhabditis elegans,” <em>PLoS computational biology</em>, vol. 12, no. 12, p. e1005283, 2016.</p>
+</div>
+<div>
+<p>[53] C. I. Del Genio, J. Gómez-Gardeñes, I. Bonamassa, and S. Boccaletti, “Synchronization in networks with multiple interaction layers,” <em>Science Advances</em>, vol. 2, no. 11, p. e1601679, 2016.</p>
+</div>
+<div>
+<p>[54] O. Schweiger, J. Settele, O. Kudrna, S. Klotz, and I. Kühn, “Climate change can cause spatial mismatch of trophically interacting species,” <em>Ecology</em>, vol. 89, no. 12, pp. 3472–3479, 2008.</p>
+</div>
+<div>
+<p>[55] D. Ludwig, D. D. Jones, and C. S. Holling, “Qualitative analysis of insect outbreak systems: The spruce budworm and forest,” <em>The Journal of Animal Ecology</em>, pp. 315–332, 1978.</p>
+</div>
+<div>
+<p>[56] A. J. Butte and I. S. Kohane, “Unsupervised knowledge discovery in medical databases using relevance networks.” in <em>Proceedings of the amia symposium</em>, 1999, p. 711.</p>
+</div>
+<div>
+<p>[57] A. J. Butte and I. S. Kohane, “Mutual information relevance networks: Functional genomic clustering using pairwise entropy measurements,” in <em>Biocomputing 2000</em>, World Scientific, 1999, pp. 418–429.</p>
+</div>
+<div>
+<p>[58] B. Zhang and S. Horvath, “A general framework for weighted gene co-expression network analysis,” <em>Statistical applications in genetics and molecular biology</em>, vol. 4, no. 1, 2005.</p>
+</div>
+<div>
+<p>[59] C. Uhler, “Gaussian graphical models: An algebraic and geometric perspective,” <em>arXiv preprint arXiv:1707.04345</em>, 2017.</p>
+</div>
+<div>
+<p>[60] A. A. Margolin <em>et al.</em>, “ARACNE: An algorithm for the reconstruction of gene regulatory networks in a mammalian cellular context,” in <em>BMC bioinformatics</em>, 2006, vol. 7, pp. 1–15.</p>
+</div>
+<div>
+<p>[61] G. D. Tourassi, E. D. Frederick, M. K. Markey, and C. E. Floyd Jr, “Application of the mutual information criterion for feature selection in computer-aided diagnosis,” <em>Medical physics</em>, vol. 28, no. 12, pp. 2394–2402, 2001.</p>
+</div>
+<div>
+<p>[62] H. Peng, F. Long, and C. Ding, “Feature selection based on mutual information criteria of max-dependency, max-relevance, and min-redundancy,” <em>IEEE Transactions on pattern analysis and machine intelligence</em>, vol. 27, no. 8, pp. 1226–1238, 2005.</p>
+</div>
+<div>
+<p>[63] E. Z. Chen and H. Li, “A two-part mixed-effects model for analyzing longitudinal microbiome compositional data,” <em>Bioinformatics</em>, vol. 32, no. 17, pp. 2611–2617, 2016.</p>
+</div>
+<div>
+<p>[64] M. Layeghifard, D. M. Hwang, and D. S. Guttman, “Disentangling interactions in the microbiome: A network perspective,” <em>Trends in microbiology</em>, vol. 25, no. 3, pp. 217–228, 2017.</p>
+</div>
+<div>
+<p>[65] N. Meinshausen and P. Bühlmann, “High-dimensional graphs and variable selection with the lasso,” <em>The annals of statistics</em>, vol. 34, no. 3, pp. 1436–1462, 2006.</p>
+</div>
+<div>
+<p>[66] R. Bonneau <em>et al.</em>, “The inferelator: An algorithm for learning parsimonious regulatory networks from systems-biology data sets de novo,” <em>Genome biology</em>, vol. 7, no. 5, pp. 1–16, 2006.</p>
+</div>
+<div>
+<p>[67] M. Layeghifard, D. M. Hwang, and D. S. Guttman, “Constructing and analyzing microbiome networks in r,” in <em>Microbiome analysis</em>, Springer, 2018, pp. 243–266.</p>
+</div>
+<div>
+<p>[68] A. E. Gamiño-Arroyo, M. P. Barrios-Ceballos, L. P. C. de la Peña, F. Anaya-Velázquez, and F. Padilla-Vaca, “Flora normal, probióticos y salud humana,” <em>Acta universitaria</em>, vol. 15, no. 3, pp. 34–40, 2005.</p>
+</div>
+<div>
+<p>[69] Y. Fan and O. Pedersen, “Gut microbiota in human metabolic health and disease,” <em>Nature Reviews Microbiology</em>, vol. 19, no. 1, pp. 55–71, 2021.</p>
+</div>
+<div>
+<p>[70] D. Rothschild <em>et al.</em>, “Environment dominates over host genetics in shaping human gut microbiota,” <em>Nature</em>, vol. 555, no. 7695, pp. 210–215, 2018.</p>
+</div>
+<div>
+<p>[71] T. Korem <em>et al.</em>, “Growth dynamics of gut microbiota in health and disease inferred from single metagenomic samples,” <em>Science</em>, vol. 349, no. 6252, pp. 1101–1106, 2015.</p>
+</div>
+<div>
+<p>[72] G. Falony, S. Vieira-Silva, and J. Raes, “Richness and ecosystem development across faecal snapshots of the gut microbiota,” <em>Nature microbiology</em>, vol. 3, no. 5, pp. 526–528, 2018.</p>
+</div>
+<div>
+<p>[73] T. Yatsunenko <em>et al.</em>, “Human gut microbiome viewed across age and geography,” <em>nature</em>, vol. 486, no. 7402, pp. 222–227, 2012.</p>
+</div>
+<div>
+<p>[74] J. Qin <em>et al.</em>, “A human gut microbial gene catalogue established by metagenomic sequencing,” <em>nature</em>, vol. 464, no. 7285, pp. 59–65, 2010.</p>
+</div>
+<div>
+<p>[75] F. Bäckhed <em>et al.</em>, “The gut microbiota as an environmental factor that regulates fat storage,” <em>Proceedings of the national academy of sciences</em>, vol. 101, no. 44, pp. 15718–15723, 2004.</p>
+</div>
+<div>
+<p>[76] L. M. Cox and M. J. Blaser, “Antibiotics in early life and obesity,” <em>Nature Reviews Endocrinology</em>, vol. 11, no. 3, pp. 182–190, 2015.</p>
+</div>
+<div>
+<p>[77] A. Górski <em>et al.</em>, “Perspectives of phage therapy in non-bacterial infections,” <em>Frontiers in Microbiology</em>, vol. 9, p. 3306, 2019.</p>
+</div>
+<div>
+<p>[78] J. C. Clemente <em>et al.</em>, “The microbiome of uncontacted amerindians,” <em>Science advances</em>, vol. 1, no. 3, p. e1500183, 2015.</p>
+</div>
+<div>
+<p>[79] S. A. Smits <em>et al.</em>, “Seasonal cycling in the gut microbiome of the hadza hunter-gatherers of tanzania,” <em>Science</em>, vol. 357, no. 6353, pp. 802–806, 2017.</p>
+</div>
+<div>
+<p>[80] A. Flint, A. Raben, J. Rehfeld, J. Holst, and A. Astrup, “The effect of glucagon-like peptide-1 on energy expenditure and substrate metabolism in humans,” <em>International journal of obesity</em>, vol. 24, no. 3, pp. 288–298, 2000.</p>
+</div>
+<div>
+<p>[81] K. M. Maslowski <em>et al.</em>, “Regulation of inflammatory responses by gut microbiota and chemoattractant receptor gpr43,” <em>Nature</em>, vol. 461, no. 7268, pp. 1282–1286, 2009.</p>
+</div>
+<div>
+<p>[82] S. Macfarlane and G. T. Macfarlane, “Composition and metabolic activities of bacterial biofilms colonizing food residues in the human gut,” <em>Applied and environmental microbiology</em>, vol. 72, no. 9, pp. 6204–6211, 2006.</p>
+</div>
+<div>
+<p>[83] W. R. Russell <em>et al.</em>, “Major phenylpropanoid-derived metabolites in the human gut can arise from microbial fermentation of protein,” <em>Molecular nutrition &amp; food research</em>, vol. 57, no. 3, pp. 523–535, 2013.</p>
+</div>
+<div>
+<p>[84] V. D. de Mello <em>et al.</em>, “Indolepropionic acid and novel lipid metabolites are associated with a lower risk of type 2 diabetes in the finnish diabetes prevention study,” <em>Scientific reports</em>, vol. 7, no. 1, pp. 1–12, 2017.</p>
+</div>
+<div>
+<p>[85] S. Tims <em>et al.</em>, “Microbiota conservation and bmi signatures in adult monozygotic twins,” <em>The ISME journal</em>, vol. 7, no. 4, pp. 707–717, 2013.</p>
+</div>
+<div>
+<p>[86] U. Gophna, T. Konikoff, and H. B. Nielsen, “Oscillospira and related bacteria–from metagenomic species to metabolic features,” <em>Environmental microbiology</em>, vol. 19, no. 3, pp. 835–841, 2017.</p>
+</div>
+<div>
+<p>[87] T. L. Miller, M. Wolin, E. C. de Macario, and A. Macario, “Isolation of methanobrevibacter smithii from human feces,” <em>Applied and environmental microbiology</em>, vol. 43, no. 1, pp. 227–232, 1982.</p>
+</div>
+<div>
+<p>[88] V. K. Ridaura <em>et al.</em>, “Gut microbiota from twins discordant for obesity modulate metabolism in mice,” <em>Science</em>, vol. 341, no. 6150, 2013.</p>
+</div>
+<div>
+<p>[89] C. A. Thaiss <em>et al.</em>, “Hyperglycemia drives intestinal barrier dysfunction and risk for enteric infection,” <em>Science</em>, vol. 359, no. 6382, pp. 1376–1383, 2018.</p>
+</div>
+<div>
+<p>[90] K. H. Allin <em>et al.</em>, “Aberrant intestinal microbiota in individuals with prediabetes,” <em>Diabetologia</em>, vol. 61, no. 4, pp. 810–820, 2018.</p>
+</div>
+<div>
+<p>[91] T. Bryrup <em>et al.</em>, “Metformin-induced changes of the gut microbiota in healthy young men: Results of a non-blinded, one-armed intervention study,” <em>Diabetologia</em>, vol. 62, no. 6, pp. 1024–1035, 2019.</p>
+</div>
+<div>
+<p>[92] A. Adeshirlarijaney, J. Zou, H. Q. Tran, B. Chassaing, and A. T. Gewirtz, “Amelioration of metabolic syndrome by metformin associates with reduced indices of low-grade inflammation independently of the gut microbiota,” <em>American Journal of Physiology-Endocrinology and Metabolism</em>, vol. 317, no. 6, pp. E1121–E1130, 2019.</p>
+</div>
+<div>
+<p>[93] Y. Fan <em>et al.</em>, “Comprehensive metabolomic characterization of coronary artery diseases,” <em>Journal of the American College of Cardiology</em>, vol. 68, no. 12, pp. 1281–1293, 2016.</p>
+</div>
+<div>
+<p>[94] E. D. Michos, J. W. McEvoy, and R. S. Blumenthal, “Lipid management for the prevention of atherosclerotic cardiovascular disease,” <em>New England Journal of Medicine</em>, vol. 381, no. 16, pp. 1557–1567, 2019.</p>
+</div>
+<div>
+<p>[95] H. Sokol <em>et al.</em>, “Faecalibacterium prausnitzii is an anti-inflammatory commensal bacterium identified by gut microbiota analysis of crohn disease patients,” <em>Proceedings of the National Academy of Sciences</em>, vol. 105, no. 43, pp. 16731–16736, 2008.</p>
+</div>
+<div>
+<p>[96] X. Cui <em>et al.</em>, “Metagenomic and metabolomic analyses unveil dysbiosis of gut microbiota in chronic heart failure patients,” <em>Scientific reports</em>, vol. 8, no. 1, pp. 1–15, 2018.</p>
+</div>
+<div>
+<p>[97] W. Zhu <em>et al.</em>, “Gut microbial metabolite tmao enhances platelet hyperreactivity and thrombosis risk,” <em>Cell</em>, vol. 165, no. 1, pp. 111–124, 2016.</p>
+</div>
+<div>
+<p>[98] V. Senthong <em>et al.</em>, “Intestinal microbiota-generated metabolite trimethylamine-n-oxide and 5-year mortality risk in stable coronary artery disease: The contributory role of intestinal microbiota in a courage-like patient cohort,” <em>Journal of the American Heart Association</em>, vol. 5, no. 6, p. e002816, 2016.</p>
+</div>
+<div>
+<p>[99] H. L. Collins <em>et al.</em>, “L-carnitine intake and high trimethylamine n-oxide plasma levels correlate with low aortic lesions in apoe-/- transgenic mice expressing cetp,” <em>Atherosclerosis</em>, vol. 244, pp. 29–37, 2016.</p>
+</div>
+<div>
+<p>[100] R. Rao, A. Seth, and P. Sheth, “Recent advances in alcoholic liver disease i. Role of intestinal permeability and endotoxemia in alcoholic liver disease,” <em>American Journal of Physiology-Gastrointestinal and Liver Physiology</em>, vol. 286, no. 6, pp. G881–G884, 2004.</p>
+</div>
+<div>
+<p>[101] M. A. Jackson <em>et al.</em>, “Detection of stable community structures within gut microbiota co-occurrence networks from different human populations,” <em>PeerJ</em>, vol. 6, p. e4303, 2018.</p>
+</div>
+<div>
+<p>[102] C. Lozupone <em>et al.</em>, “Identifying genomic and metabolic features that can underlie early successional and opportunistic lifestyles of human gut symbionts,” <em>Genome research</em>, vol. 22, no. 10, pp. 1974–1984, 2012.</p>
+</div>
+<div>
+<p>[103] R. Guimera and L. A. N. Amaral, “Cartography of complex networks: Modules and universal roles,” <em>Journal of Statistical Mechanics: Theory and Experiment</em>, vol. 2005, no. 2, p. P02001, 2005.</p>
+</div>
+<div>
+<p>[104] V. Colizza, A. Flammini, M. A. Serrano, and A. Vespignani, “Detecting rich-club ordering in complex networks,” <em>Nature physics</em>, vol. 2, no. 2, pp. 110–115, 2006.</p>
+</div>
+<div>
+<p>[105] S. N. Baldassano and D. S. Bassett, “Topological distortion and reorganized modular structure of gut microbial co-occurrence networks in inflammatory bowel disease,” <em>Scientific reports</em>, vol. 6, no. 1, pp. 1–14, 2016.</p>
+</div>
+<div>
+<p>[106] Z. Mayoral-Peña, R. Álvarez-Martı́nez, J. Fornoni, and E. Garrido, “The extended microbiota: How microbes shape plant-insect interactions,” in <em>Evolutionary ecology of plant-herbivore interaction</em>, Springer, 2020, pp. 135–146.</p>
+</div>
+<div>
+<p>[107] K. Faust, F. Bauchinger, S. de Buyl, and L. Lahti, <em>Seqtime: Time series analysis of sequencing data</em>. 2021.Available: <a href="https://github.com/hallucigenia-sparsa/seqtime">https://github.com/hallucigenia-sparsa/seqtime</a></p>
+</div>
+<div>
+<p>[108] F. David Materna, “Host lifestyle affects human microbiota on daily timescales,” <em>Genome Biology</em>, vol. 7, 2014.</p>
+</div>
+<div>
+<p>[109] G. Csardi and T. Nepusz, “The igraph software package for complex network research,” <em>InterJournal</em>, vol. Complex Systems, p. 1695, 2006,Available: <a href="https://igraph.org">https://igraph.org</a></p>
+</div>
+<div>
+<p>[110] P. J. McMurdie and S. Holmes, “Phyloseq: An r package for reproducible interactive analysis and graphics of microbiome census data,” <em>PLoS ONE</em>, vol. 8, no. 4, p. e61217, 2013,Available: <a href="http://dx.plos.org/10.1371/journal.pone.0061217">http://dx.plos.org/10.1371/journal.pone.0061217</a></p>
+</div>
+<div>
+<p>[111] Z. Kurtz, C. Mueller, E. Miraldi, and R. Bonneau, <em>SpiecEasi: Sparse inverse covariance for ecological statistical inference</em>. 2021.</p>
+</div>
+<div>
+<p>[112] P. E. Meyer, F. Lafitte, and G. Bontempi, “MINET: An open source r/bioconductor package for mutual information based network inference,” <em>BMC Bioinformatics</em>, vol. 9, 2008,Available: <a href="http://www.biomedcentral.com/1471-2105/9/461">http://www.biomedcentral.com/1471-2105/9/461</a></p>
+</div>
+<div>
+<p>[113] M. De Domenico, <em>MuxViz: MuxViz - visualization and analysis of multilayer networks</em>. 2021.Available: <a href="https://github.com/manlius/muxViz">https://github.com/manlius/muxViz</a></p>
+</div>
+<div>
+<p>[114] M. Magnani, L. Rossi, and D. Vega, “Analysis of multiplex social networks with R,” <em>Journal of Statistical Software</em>, vol. 98, no. 8, pp. 1–30, 2021, doi: <a href="https://doi.org/10.18637/jss.v098.i08">10.18637/jss.v098.i08</a>.</p>
+</div>
+<div>
+<p>[115] T. Wei and V. Simko, <em>R package ’corrplot’: Visualization of a correlation matrix</em>. 2021.Available: <a href="https://github.com/taiyun/corrplot">https://github.com/taiyun/corrplot</a></p>
+</div>
+<div>
+<p>[116] R. Kindt and R. Coe, <em>Tree diversity analysis. A manual and software for common statistical methods for ecological and biodiversity studies</em>. Nairobi (Kenya): World Agroforestry Centre (ICRAF), 2005.Available: <a href="http://www.worldagroforestry.org/output/tree-diversity-analysis">http://www.worldagroforestry.org/output/tree-diversity-analysis</a></p>
+</div>
+<div>
+<p>[117] B. Tóthmérész, “Comparison of different methods for diversity ordering,” <em>Journal of vegetation Science</em>, vol. 6, no. 2, pp. 283–290, 1995.</p>
+</div>
+<div>
+<p>[118] D. Combe, C. Largeron, M. Géry, and E. Egyed-Zsigmond, “I-louvain: An attributed graph clustering method,” in <em>International symposium on intelligent data analysis</em>, 2015, pp. 181–192.</p>
+</div>
+<div>
+<p>[119] P. De Meo, E. Ferrara, G. Fiumara, and A. Provetti, “Generalized louvain method for community detection in large networks,” in <em>2011 11th international conference on intelligent systems design and applications</em>, 2011, pp. 88–93.</p>
+</div>
+<div>
+<p>[120] G. Klein and J. E. Aronson, “Optimal clustering: A model and method,” <em>Naval Research Logistics (NRL)</em>, vol. 38, no. 3, pp. 447–461, 1991.</p>
+</div>
+<div>
+<p>[121] L. A. Kazakovtsev and A. N. Antamoshkin, “Genetic algorithm with fast greedy heuristic for clustering and location problems,” <em>Informatica</em>, vol. 38, no. 3, 2014.</p>
+</div>
+<div>
+<p>[122] K. Y. Yeung and W. L. Ruzzo, “Details of the adjusted rand index and clustering algorithms, supplement to the paper an empirical study on principal component analysis for clustering gene expression data,” <em>Bioinformatics</em>, vol. 17, no. 9, pp. 763–774, 2001.</p>
+</div>
+<div>
+<p>[123] L. Ana and A. K. Jain, “Robust data clustering,” in <em>2003 ieee computer society conference on computer vision and pattern recognition, 2003. Proceedings.</em>, 2003, vol. 2, pp. II–II.</p>
 </div>
 </div>
 </div>
@@ -265,6 +668,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
