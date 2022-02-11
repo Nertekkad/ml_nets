@@ -78,7 +78,7 @@ Under the approach of the temporal network, I analyzed data from two subjects wh
 
 **Figura 19:** Discrepancia de la inferencia entre varios algoritmos [@hirano2019difficulty].
 
-**Figura 20:** Interacción entre la microbiota y el huésped bajo distintos regímenes alimenticios [fan2021gut].
+**Figura 20:** Interacción entre la microbiota y el huésped bajo distintos regímenes alimenticios [@fan2021gut].
 
 **Figura 21:** Efectos de la disbiosis en el tejido hepático [@del2017gut].
 
@@ -86,5 +86,24 @@ Under the approach of the temporal network, I analyzed data from two subjects wh
 
 **Figura 23:** Red multicapa de la microbiota del rumen bovino [@zheng2018improving].
 
+**Figura 24:** Clusterización mediante el método Louvain de las capas de la red escarabajo-solanácea.
+
+**Figura 25:** Red multiplex SparCC de escarabajo-solanácea.
+
+**Figura 26:** Distribución de los *phylum* en las muestras de la red escarabajo-solanácea.
+
+**Figura 27:** Centralidad por *degree* de la red escarabajo-solanácea.
+
+**Figura 28:** Cambio de las abundancias de los nodos entre capas de la red escarabajo-solanácea.
+
+**Figura 29:** Distribución de las abundancias de los *phyla* en el sujeto A a lo largo de las tres capas.
+
+**Figura 30:** Capas de las redes temporales ARACNe de los sujetos A y B.
+
+**Figura 31:** Serie temporal de los diez OTUs más abundantes en las muestras del sujeto A.
+
 ## Tablas {-}
 
+**Tabla 1:** Paquetes de R utilizados.
+
+**Tabla 2:** Funciones del paquete ml_BioNets.

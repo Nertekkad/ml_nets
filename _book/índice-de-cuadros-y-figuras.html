@@ -164,6 +164,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="resultados.html"><a href="resultados.html#resultados-de-la-red-escarabajo-solanácea"><i class="fa fa-check"></i>Resultados de la red escarabajo-solanácea</a></li>
 <li class="chapter" data-level="" data-path="resultados.html"><a href="resultados.html#resultados-de-las-redes-para-los-sujetos-a-y-b"><i class="fa fa-check"></i>Resultados de las redes para los sujetos A y B</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="discusión.html"><a href="discusión.html"><i class="fa fa-check"></i>Discusión</a><ul>
+<li class="chapter" data-level="" data-path="discusión.html"><a href="discusión.html#discusión-de-la-red-escarabajo-solanácea"><i class="fa fa-check"></i>Discusión de la red escarabajo-solanácea</a></li>
+<li class="chapter" data-level="" data-path="discusión.html"><a href="discusión.html#discusión-de-las-redes-temporales-de-los-sujetos-a-y-b"><i class="fa fa-check"></i>Discusión de las redes temporales de los sujetos A y B</a></li>
+<li class="chapter" data-level="" data-path="discusión.html"><a href="discusión.html#conclusiones-generales"><i class="fa fa-check"></i>Conclusiones generales</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -208,13 +213,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Figura 17:</strong> Comparación entre la inferencia de Pearson y SparCC <span class="citation">[<a href="#ref-friedman2012inferring" role="doc-biblioref">15</a>]</span>.</p>
 <p><strong>Figura 18:</strong> Inferencia de redes por SparCC <span class="citation">[<a href="#ref-kurtz2015sparse" role="doc-biblioref">16</a>]</span>.</p>
 <p><strong>Figura 19:</strong> Discrepancia de la inferencia entre varios algoritmos <span class="citation">[<a href="#ref-hirano2019difficulty" role="doc-biblioref">17</a>]</span>.</p>
-<p><strong>Figura 20:</strong> Interacción entre la microbiota y el huésped bajo distintos regímenes alimenticios [fan2021gut].</p>
-<p><strong>Figura 21:</strong> Efectos de la disbiosis en el tejido hepático <span class="citation">[<a href="#ref-del2017gut" role="doc-biblioref">18</a>]</span>.</p>
-<p><strong>Figura 22:</strong> Redes de coabundancia de la microbiota de individuos con síntrome de intestino irritable <span class="citation">[<a href="#ref-smith2013gut" role="doc-biblioref">19</a>]</span>.</p>
-<p><strong>Figura 23:</strong> Red multicapa de la microbiota del rumen bovino <span class="citation">[<a href="#ref-zheng2018improving" role="doc-biblioref">20</a>]</span>.</p>
+<p><strong>Figura 20:</strong> Interacción entre la microbiota y el huésped bajo distintos regímenes alimenticios <span class="citation">[<a href="#ref-fan2021gut" role="doc-biblioref">18</a>]</span>.</p>
+<p><strong>Figura 21:</strong> Efectos de la disbiosis en el tejido hepático <span class="citation">[<a href="#ref-del2017gut" role="doc-biblioref">19</a>]</span>.</p>
+<p><strong>Figura 22:</strong> Redes de coabundancia de la microbiota de individuos con síntrome de intestino irritable <span class="citation">[<a href="#ref-smith2013gut" role="doc-biblioref">20</a>]</span>.</p>
+<p><strong>Figura 23:</strong> Red multicapa de la microbiota del rumen bovino <span class="citation">[<a href="#ref-zheng2018improving" role="doc-biblioref">21</a>]</span>.</p>
+<p><strong>Figura 24:</strong> Clusterización mediante el método Louvain de las capas de la red escarabajo-solanácea.</p>
+<p><strong>Figura 25:</strong> Red multiplex SparCC de escarabajo-solanácea.</p>
+<p><strong>Figura 26:</strong> Distribución de los <em>phylum</em> en las muestras de la red escarabajo-solanácea.</p>
+<p><strong>Figura 27:</strong> Centralidad por <em>degree</em> de la red escarabajo-solanácea.</p>
+<p><strong>Figura 28:</strong> Cambio de las abundancias de los nodos entre capas de la red escarabajo-solanácea.</p>
+<p><strong>Figura 29:</strong> Distribución de las abundancias de los <em>phyla</em> en el sujeto A a lo largo de las tres capas.</p>
+<p><strong>Figura 30:</strong> Capas de las redes temporales ARACNe de los sujetos A y B.</p>
+<p><strong>Figura 31:</strong> Serie temporal de los diez OTUs más abundantes en las muestras del sujeto A.</p>
 </div>
 <div id="tablas" class="section level2 unnumbered">
 <h2>Tablas</h2>
+<p><strong>Tabla 1:</strong> Paquetes de R utilizados.</p>
+<p><strong>Tabla 2:</strong> Funciones del paquete ml_BioNets.</p>
 
 </div>
 </div>
@@ -271,14 +286,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="ref-hirano2019difficulty">
 <p>[17] H. Hirano and K. Takemoto, “Difficulty in inferring microbial community structure based on co-occurrence network approaches,” <em>BMC bioinformatics</em>, vol. 20, no. 1, pp. 1–14, 2019.</p>
 </div>
+<div id="ref-fan2021gut">
+<p>[18] Y. Fan and O. Pedersen, “Gut microbiota in human metabolic health and disease,” <em>Nature Reviews Microbiology</em>, vol. 19, no. 1, pp. 55–71, 2021.</p>
+</div>
 <div id="ref-del2017gut">
-<p>[18] F. Del Chierico <em>et al.</em>, “Gut microbiota profiling of pediatric nonalcoholic fatty liver disease and obese patients unveiled by an integrated meta-omics-based approach,” <em>Hepatology</em>, vol. 65, no. 2, pp. 451–464, 2017.</p>
+<p>[19] F. Del Chierico <em>et al.</em>, “Gut microbiota profiling of pediatric nonalcoholic fatty liver disease and obese patients unveiled by an integrated meta-omics-based approach,” <em>Hepatology</em>, vol. 65, no. 2, pp. 451–464, 2017.</p>
 </div>
 <div id="ref-smith2013gut">
-<p>[19] M. I. Smith <em>et al.</em>, “Gut microbiomes of malawian twin pairs discordant for kwashiorkor,” <em>Science</em>, vol. 339, no. 6119, pp. 548–554, 2013.</p>
+<p>[20] M. I. Smith <em>et al.</em>, “Gut microbiomes of malawian twin pairs discordant for kwashiorkor,” <em>Science</em>, vol. 339, no. 6119, pp. 548–554, 2013.</p>
 </div>
 <div id="ref-zheng2018improving">
-<p>[20] H. Zheng, H. Wang, R. J. Dewhurst, and R. Roehe, “Improving the inference of co-occurrence networks in the bovine rumen microbiome,” <em>IEEE/ACM transactions on computational biology and bioinformatics</em>, vol. 17, no. 3, pp. 858–867, 2018.</p>
+<p>[21] H. Zheng, H. Wang, R. J. Dewhurst, and R. Roehe, “Improving the inference of co-occurrence networks in the bovine rumen microbiome,” <em>IEEE/ACM transactions on computational biology and bioinformatics</em>, vol. 17, no. 3, pp. 858–867, 2018.</p>
 </div>
 </div>
             </section>

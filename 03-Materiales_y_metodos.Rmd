@@ -2,7 +2,7 @@
 
 ----
 
-Se analizaron tres bases de datos tipo phyloseq bajo el enfoque de las redes multicapa. La primera de estas contenía datos de la microbiota del escarabajo Lema daturaphila y de la microbiota de la planta de la cual este se alimenta durante su estadio larval, la solanácea Datura inoxia [@mayoral2020extended]. También se analizaron dos bases de datos procedentes del paquete seqtime [@seqtime], correspondientes a series temporales de la microbiota de dos sujetos; el primero de los cuales (sujeto A) realizó un viaje entre los días 71 y 122 durante los cuales cambió su régimen alimenticio, sufriendo en consecuencia dos episodios de diarrea entre los días 80 a 85 y 104 a 113. Por su parte, el sujeto B experimentó una intoxicación por Salmonella entre los días 151 y 159 [@David2014].
+Se analizaron tres bases de datos tipo phyloseq bajo el enfoque de las redes multicapa. La primera de estas contenía datos de la microbiota del escarabajo Lema daturaphila y de la microbiota de la planta de la cual este se alimenta durante su estadio larval, la solanácea Datura inoxia [@mayoral2020extended]. También se analizaron dos bases de datos procedentes del paquete seqtime [@seqtime], correspondientes a series temporales de la microbiota de dos sujetos; el primero de los cuales (sujeto A) realizó un viaje entre los días 71 y 122 durante los cuales cambió su régimen alimenticio, sufriendo en consecuencia dos episodios de diarrea entre los días 80 a 85 y 104 a 113. Por su parte, el sujeto B experimentó una intoxicación por *Salmonella* entre los días 151 y 159 [@David2014].
 
 Para la realización de este trabajo se utilizó la versión 4.1.0 (2021-05-18) de R. Se emplearon los paquetes *igraph* [@igraph], *phyloseq* [@phyloseq], *SpiecEasi* [@SpiecEasi], *minet* [@minet], *seqtime* [@seqtime], *muxViz* [@muxViz], *multinet* [@multinet], *corrplot* [@corrplot2021] y *BiodiversityR* [@BiodiversityR]. Algunos de los paquetes están disponibles en CRAN y otros fueron descargados de repositorios de GitHub o del proyecto para análisis de datos genómicos Bioconductor.
 
@@ -18,6 +18,8 @@ multinet | Construcción, diseño y análisis de redes multicapa. | CRAN | insta
 corrplot | Análisis de la correlación de matrices. | CRAN | install.packages("corrplot")
 BiodiversityR | Análisis de diversidad | CRAN | install.packages("BiodiversityR")
 
+![**Tabla 1:** Paquetes de R utilizados.]()
+
 También  desarrollé  una serie de funciones en R que me permitieron analizar los datos, mismas que fueron almacenadas como un paquete de autoría propia que llamamos **ml_BioNets**. Dicho paquete depende de *igraph* [@igraph], *muxViz* [@muxViz] y *phyloseq* [@phyloseq].
 
 Comando | Uso | Inputs 
@@ -30,6 +32,8 @@ ctr(g.list, ctr_type) | Colorea los nodos en un espectro de colores cálidos en 
 ctr_g(g, ctr_type) | Colorea los nodos en un espectro de colores cálidos en función de su centralidad por grado, intermediación o cercanía. El resultado se almacena como un atributo asociado a los nodos al que llamamos *hl*. | Red tipo igraph y tipo de centralidad seleccionada (*degree*, *betweenness* o *closeness*).
 diff_nodes_graph(T_Collapsed, n, mat_list, g.list, alpha) | Identifica diferencias significativas entre la media de las abundancias de nodos réplica en redes bipartitas. Esta función sólo considera los nodos con mayor abundancia. El resultado se almacena como un atributo asociado a los nodos al que llamamos *colorA*. | Tabla de abundancias de todas las muestras, número a nodos a considerar, lista de matrices de abundancias de las distintas capas, y el nivel de significancia alfa.
 corr_clusters(clusters, method, as.corrplot) | Esta función permite generar una matriz de correlaciones de la clusterización entre las capas de la red, además de un gráfico de correlaciones. | Lista de objetos tipo *communities* para cada capa, generados con alguna de las funciones de clusterización de *igraph*. Los métodos de comparación de la clusterización entre capas pueden ser "*vi*", "*nmi*", "*split.join*". "*rand*" o "*adjusted.rand*". Si *as.corrplot = T*, la función genera un gráfico de correlaciones, de lo contrario arroja una matriz de correlaciones.
+
+![**Tabla 2:** Funciones del paquete ml_BioNets.]()
 
 Previo a la inferencia de las redes, se colapsaron los datos a nivel de género en todas las bases de datos, eliminando previamente todos aquellos no-clasificados. Para esto se construyó la función *T_Collapse()*, que emplea como entrada la tabla de OTUs, la tabla de taxones y el nivel taxonómico hasta el cual se desea colapsar los datos. Dicha función suma las abundancias absolutas de los OTUs pertenecientes a cada uno de los clados dentro de la categoría taxonómica seleccionada.
 
