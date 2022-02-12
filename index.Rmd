@@ -2,18 +2,18 @@
 title: "Redes multicapa como herramienta de análisis de la microbiota"
 author: "Víctor Lázaro Vidal"
 date: "09/02/22"
-site: bookdown::bookdown_site
+output:
+  word_document: default
+  html_document:
+    df_print: paged
 documentclass: book
-bibliography: [book.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
+bibliography: book.bib
 description: |
   Analysis of microbiota patters using multilayer networks.
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-# Activar APA e inactivar IEEE si se quiere cambiar estilo de cita.
-# csl: apa-6th-edition.csl
 csl: ieee.csl
+site: bookdown::bookdown_site
 ---
 
 # Resumen {-}
