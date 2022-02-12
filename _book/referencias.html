@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Referencias | Redes multicapa como herramienta de análisis de la microbiota</title>
+  <meta name="description" content="Analysis of microbiota patters using multilayer networks." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Referencias | Redes multicapa como herramienta de análisis de la microbiota" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Analysis of microbiota patters using multilayer networks." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Referencias | Redes multicapa como herramienta de análisis de la microbiota" />
+  
+  <meta name="twitter:description" content="Analysis of microbiota patters using multilayer networks." />
+  
+
+<meta name="author" content="Víctor Lázaro Vidal" />
+
+
+<meta name="date" content="2022-09-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="discusión.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Resumen</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#agradecimientos"><i class="fa fa-check"></i>Agradecimientos</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#tabla-de-contenido"><i class="fa fa-check"></i>Tabla de contenido</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="índice-de-cuadros-y-figuras.html"><a href="índice-de-cuadros-y-figuras.html"><i class="fa fa-check"></i>Índice de cuadros y figuras</a><ul>
+<li class="chapter" data-level="" data-path="índice-de-cuadros-y-figuras.html"><a href="índice-de-cuadros-y-figuras.html#figuras"><i class="fa fa-check"></i>Figuras</a></li>
+<li class="chapter" data-level="" data-path="índice-de-cuadros-y-figuras.html"><a href="índice-de-cuadros-y-figuras.html#tablas"><i class="fa fa-check"></i>Tablas</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a><ul>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#objetivo-general"><i class="fa fa-check"></i>Objetivo general</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#objetivos-particulares"><i class="fa fa-check"></i>Objetivos particulares</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="antecedentes.html"><a href="antecedentes.html"><i class="fa fa-check"></i>Antecedentes</a><ul>
+<li class="chapter" data-level="" data-path="antecedentes.html"><a href="antecedentes.html#definición-y-generalidades-de-una-red"><i class="fa fa-check"></i>Definición y generalidades de una red</a></li>
+<li class="chapter" data-level="" data-path="antecedentes.html"><a href="antecedentes.html#propiedades-topológicas-de-las-redes"><i class="fa fa-check"></i>Propiedades topológicas de las redes</a></li>
+<li class="chapter" data-level="" data-path="antecedentes.html"><a href="antecedentes.html#definición-y-características-de-las-redes-multicapa"><i class="fa fa-check"></i>Definición y características de las redes multicapa</a></li>
+<li class="chapter" data-level="" data-path="antecedentes.html"><a href="antecedentes.html#aplicaciones-de-las-redes-multicapa"><i class="fa fa-check"></i>Aplicaciones de las redes multicapa</a></li>
+<li class="chapter" data-level="" data-path="antecedentes.html"><a href="antecedentes.html#inferencias-de-redes"><i class="fa fa-check"></i>Inferencias de redes</a></li>
+<li class="chapter" data-level="" data-path="antecedentes.html"><a href="antecedentes.html#la-microbiota-intestinal-y-su-impacto-en-la-salud-humana"><i class="fa fa-check"></i>La microbiota intestinal y su impacto en la salud humana</a></li>
+<li class="chapter" data-level="" data-path="antecedentes.html"><a href="antecedentes.html#uso-de-redes-en-la-exploración-de-la-microbiota"><i class="fa fa-check"></i>Uso de redes en la exploración de la microbiota</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="materiales-y-métodos.html"><a href="materiales-y-métodos.html"><i class="fa fa-check"></i>Materiales y métodos</a></li>
+<li class="chapter" data-level="" data-path="resultados.html"><a href="resultados.html"><i class="fa fa-check"></i>Resultados</a><ul>
+<li class="chapter" data-level="" data-path="resultados.html"><a href="resultados.html#resultados-de-la-red-escarabajo-solanácea"><i class="fa fa-check"></i>Resultados de la red escarabajo-solanácea</a></li>
+<li class="chapter" data-level="" data-path="resultados.html"><a href="resultados.html#resultados-de-las-redes-para-los-sujetos-a-y-b"><i class="fa fa-check"></i>Resultados de las redes para los sujetos A y B</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="discusión.html"><a href="discusión.html"><i class="fa fa-check"></i>Discusión</a><ul>
+<li class="chapter" data-level="" data-path="discusión.html"><a href="discusión.html#discusión-de-la-red-escarabajo-solanácea"><i class="fa fa-check"></i>Discusión de la red escarabajo-solanácea</a></li>
+<li class="chapter" data-level="" data-path="discusión.html"><a href="discusión.html#discusión-de-las-redes-temporales-de-los-sujetos-a-y-b"><i class="fa fa-check"></i>Discusión de las redes temporales de los sujetos A y B</a></li>
+<li class="chapter" data-level="" data-path="discusión.html"><a href="discusión.html#conclusiones-generales"><i class="fa fa-check"></i>Conclusiones generales</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Redes multicapa como herramienta de análisis de la microbiota</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="referencias" class="section level1 unnumbered">
+<h1>Referencias</h1>
+
+<div id="refs" class="references">
+<div>
+<p>[1] S. E. Schaeffer, “Graph clustering,” <em>Computer science review</em>, vol. 1, no. 1, pp. 27–64, 2007.</p>
+</div>
+<div>
+<p>[2] D. J. Watts and S. H. Strogatz, “Collective dynamics of ‘small-world’networks,” <em>nature</em>, vol. 393, no. 6684, pp. 440–442, 1998.</p>
+</div>
+<div>
+<p>[3] F. V. Farahani, W. Karwowski, and N. R. Lighthall, “Application of graph theory for identifying connectivity patterns in human brain networks: A systematic review,” <em>frontiers in Neuroscience</em>, vol. 13, p. 585, 2019.</p>
+</div>
+<div>
+<p>[4] G. Bianconi, <em>Multilayer networks: Structure and function</em>. Oxford university press, 2018.</p>
+</div>
+<div>
+<p>[5] J. F. Padgett and C. K. Ansell, “Robust action and the rise of the medici, 1400-1434,” <em>American journal of sociology</em>, vol. 98, no. 6, pp. 1259–1319, 1993.</p>
+</div>
+<div>
+<p>[6] E. Cozzo, G. F. de Arruda, F. A. Rodrigues, and Y. Moreno, “Multilayer networks: Metrics and spectral properties,” in <em>Interconnected networks</em>, Springer, 2016, pp. 17–35.</p>
+</div>
+<div>
+<p>[7] E. Cozzo <em>et al.</em>, “Clustering coefficients in multiplex networks,” <em>arXiv preprint arXiv:1307.6780</em>, 2013.</p>
+</div>
+<div>
+<p>[8] A. Aleta, S. Meloni, and Y. Moreno, “A multilayer perspective for the analysis of urban transportation systems,” <em>Scientific reports</em>, vol. 7, no. 1, pp. 1–9, 2017.</p>
+</div>
+<div>
+<p>[9] J. Sanz, C.-Y. Xia, S. Meloni, and Y. Moreno, “Dynamics of interacting diseases,” <em>Physical Review X</em>, vol. 4, no. 4, p. 041005, 2014.</p>
+</div>
+<div>
+<p>[10] Y. V. Sun and Y.-J. Hu, “Integrative analysis of multi-omics data for discovery and functional studies of complex human diseases,” <em>Advances in genetics</em>, vol. 93, pp. 147–190, 2016.</p>
+</div>
+<div>
+<p>[11] M. Schleuning <em>et al.</em>, “Trait-based assessments of climate-change impacts on interacting species,” <em>Trends in Ecology &amp; Evolution</em>, vol. 35, no. 4, pp. 319–328, 2020.</p>
+</div>
+<div>
+<p>[12] N. Villa-Vialaneix-nathalie, “An introduction to network inference and mining.”</p>
+</div>
+<div>
+<p>[13] P. Langfelder and S. Horvath, “WGCNA: An r package for weighted correlation network analysis,” <em>BMC bioinformatics</em>, vol. 9, no. 1, pp. 1–13, 2008.</p>
+</div>
+<div>
+<p>[14] P. E. Meyer, F. Lafitte, and G. Bontempi, “Minet: AR/bioconductor package for inferring large transcriptional networks using mutual information,” <em>BMC bioinformatics</em>, vol. 9, no. 1, pp. 1–10, 2008.</p>
+</div>
+<div>
+<p>[15] J. Friedman and E. J. Alm, “Inferring correlation networks from genomic survey data,” 2012.</p>
+</div>
+<div>
+<p>[16] Z. D. Kurtz, C. L. Müller, E. R. Miraldi, D. R. Littman, M. J. Blaser, and R. A. Bonneau, “Sparse and compositionally robust inference of microbial ecological networks,” <em>PLoS computational biology</em>, vol. 11, no. 5, p. e1004226, 2015.</p>
+</div>
+<div>
+<p>[17] H. Hirano and K. Takemoto, “Difficulty in inferring microbial community structure based on co-occurrence network approaches,” <em>BMC bioinformatics</em>, vol. 20, no. 1, pp. 1–14, 2019.</p>
+</div>
+<div>
+<p>[18] Y. Fan and O. Pedersen, “Gut microbiota in human metabolic health and disease,” <em>Nature Reviews Microbiology</em>, vol. 19, no. 1, pp. 55–71, 2021.</p>
+</div>
+<div>
+<p>[19] F. Del Chierico <em>et al.</em>, “Gut microbiota profiling of pediatric nonalcoholic fatty liver disease and obese patients unveiled by an integrated meta-omics-based approach,” <em>Hepatology</em>, vol. 65, no. 2, pp. 451–464, 2017.</p>
+</div>
+<div>
+<p>[20] M. I. Smith <em>et al.</em>, “Gut microbiomes of malawian twin pairs discordant for kwashiorkor,” <em>Science</em>, vol. 339, no. 6119, pp. 548–554, 2013.</p>
+</div>
+<div>
+<p>[21] H. Zheng, H. Wang, R. J. Dewhurst, and R. Roehe, “Improving the inference of co-occurrence networks in the bovine rumen microbiome,” <em>IEEE/ACM transactions on computational biology and bioinformatics</em>, vol. 17, no. 3, pp. 858–867, 2018.</p>
+</div>
+<div>
+<p>[22] L. Viniegra Velázquez, “El reduccionismo cientı́fico y el control de las conciencias: Parte i,” <em>Boletı́n Médico del Hospital Infantil de México</em>, vol. 71, no. 4, pp. 252–257, 2014.</p>
+</div>
+<div>
+<p>[23] P. W. Anderson, “More is different,” <em>Science</em>, vol. 177, no. 4047, pp. 393–396, 1972.</p>
+</div>
+<div>
+<p>[24] B. Falkenburg and M. Morrison, “Why more is different,” <em>Philosophical Issues in Condensed Matter Physics and Complex Systems. Springer, Berlin, Heidelberg</em>, 2015.</p>
+</div>
+<div>
+<p>[25] M. Gardner, “The fantastic combinations of jhon conway’s new solitaire game’Life,” <em>Sc. Am.</em>, vol. 223, pp. 20–123, 1970.</p>
+</div>
+<div>
+<p>[26] J. Von Neuman <em>et al.</em>, “Theory of self-reproducing automata,” 1966.</p>
+</div>
+<div>
+<p>[27] N. Baas, “Emergence, hierarchies and hyperstructures. Artifidal ufe, n’Ill, vol,” <em>Addison-Wesley</em>, vol. 515, p. 537, 1994.</p>
+</div>
+<div>
+<p>[28] G. H. Lewes, “Problems of life and mind, first series: The foundations of a creed, vol 2.” 1891.</p>
+</div>
+<div>
+<p>[29] O. Mason and M. Verwoerd, “Graph theory and networks in biology,” <em>IET systems biology</em>, vol. 1, no. 2, pp. 89–119, 2007.</p>
+</div>
+<div>
+<p>[30] J. Stelling, U. Sauer, Z. Szallasi, F. J. Doyle III, and J. Doyle, “Robustness of cellular functions,” <em>Cell</em>, vol. 118, no. 6, pp. 675–685, 2004.</p>
+</div>
+<div>
+<p>[31] Y.-Y. Liu, J.-J. Slotine, and A.-L. Barabási, “Controllability of complex networks,” <em>nature</em>, vol. 473, no. 7346, pp. 167–173, 2011.</p>
+</div>
+<div>
+<p>[32] W. Zheng, D. Wang, and X. Zou, “Control of multilayer biological networks and applied to target identification of complex diseases,” <em>BMC bioinformatics</em>, vol. 20, no. 1, pp. 1–12, 2019.</p>
+</div>
+<div>
+<p>[33] L. A. Zuzek, H. E. Stanley, and L. A. Braunstein, “Epidemic model with isolation in multilayer networks,” <em>Scientific reports</em>, vol. 5, no. 1, pp. 1–7, 2015.</p>
+</div>
+<div>
+<p>[34] A. Aleta and Y. Moreno, “Multilayer networks in a nutshell,” <em>Annual Review of Condensed Matter Physics</em>, vol. 10, pp. 45–62, 2019.</p>
+</div>
+<div>
+<p>[35] R. Albert and A.-L. Barabási, “Statistical mechanics of complex networks,” <em>Reviews of modern physics</em>, vol. 74, no. 1, p. 47, 2002.</p>
+</div>
+<div>
+<p>[36] M. E. Newman, A.-L. E. Barabási, and D. J. Watts, <em>The structure and dynamics of networks.</em> Princeton university press, 2006.</p>
+</div>
+<div>
+<p>[37] Y. Wang, E. Ghumare, R. Vandenberghe, and P. Dupont, “Comparison of different generalizations of clustering coefficient and local efficiency for weighted undirected graphs,” <em>Neural computation</em>, vol. 29, no. 2, pp. 313–331, 2017.</p>
+</div>
+<div>
+<p>[38] M. Newman and G. Barkema, “Oxford university press; new york: 2010,” <em>Networks: An Introduction.[Google Scholar]</em>.</p>
+</div>
+<div>
+<p>[39] A. B. Das, “Small-world networks of prognostic genes associated with lung adenocarcinoma development,” <em>Genomics</em>, vol. 112, no. 6, pp. 4078–4088, 2020.</p>
+</div>
+<div>
+<p>[40] S. V. Buldyrev, R. Parshani, G. Paul, H. E. Stanley, and S. Havlin, “Catastrophic cascade of failures in interdependent networks,” <em>Nature</em>, vol. 464, no. 7291, pp. 1025–1028, 2010.</p>
+</div>
+<div>
+<p>[41] R. Kanawati, “Multiplex network mining: A brief survey.” <em>IEEE Intell. Informatics Bull.</em>, vol. 16, no. 1, pp. 24–27, 2015.</p>
+</div>
+<div>
+<p>[42] H. Arda, A. Arenas, A. Sharma, and others, “The multiplex network of human diseases,” <em>NPJ Systems Biology and Applications</em>, vol. 5, no. 1, 2019.</p>
+</div>
+<div>
+<p>[43] P. Holme and J. Saramäki, “Temporal networks,” <em>Physics reports</em>, vol. 519, no. 3, pp. 97–125, 2012.</p>
+</div>
+<div>
+<p>[44] A. Barrat, M. Barthelemy, and A. Vespignani, <em>Dynamical processes on complex networks</em>. Cambridge university press, 2008.</p>
+</div>
+<div>
+<p>[45] D. Y. Kenett, M. Perc, and S. Boccaletti, “Networks of networks–an introduction,” <em>Chaos, Solitons &amp; Fractals</em>, vol. 80, pp. 1–6, 2015.</p>
+</div>
+<div>
+<p>[46] S. Gomez, A. Diaz-Guilera, J. Gomez-Gardenes, C. J. Perez-Vicente, Y. Moreno, and A. Arenas, “Diffusion dynamics on multiplex networks,” <em>Physical review letters</em>, vol. 110, no. 2, p. 028701, 2013.</p>
+</div>
+<div>
+<p>[47] J. Iacovacci, C. Rahmede, A. Arenas, and G. Bianconi, “Functional multiplex pagerank,” <em>EPL (Europhysics Letters)</em>, vol. 116, no. 2, p. 28004, 2016.</p>
+</div>
+<div>
+<p>[48] A. Lancichinetti and S. Fortunato, “Consensus clustering in complex networks,” <em>Scientific reports</em>, vol. 2, no. 1, pp. 1–7, 2012.</p>
+</div>
+<div>
+<p>[49] J. F. Donges, H. C. Schultz, N. Marwan, Y. Zou, and J. Kurths, “Investigating the topology of interacting networks,” <em>The European Physical Journal B</em>, vol. 84, no. 4, pp. 635–651, 2011.</p>
+</div>
+<div>
+<p>[50] Y.-Y. Liu and A.-L. Barabási, “Control principles of complex systems,” <em>Reviews of Modern Physics</em>, vol. 88, no. 3, p. 035006, 2016.</p>
+</div>
+<div>
+<p>[51] T. O’Connor, “Emergent properties,” <em>American Philosophical Quarterly</em>, vol. 31, no. 2, pp. 91–104, 1994.</p>
+</div>
+<div>
+<p>[52] E. Lazega and P. E. Pattison, “Multiplexity, generalized exchange and cooperation in organizations: A case study,” <em>Social networks</em>, vol. 21, no. 1, pp. 67–90, 1999.</p>
+</div>
+<div>
+<p>[53] B. Bentley <em>et al.</em>, “The multilayer connectome of caenorhabditis elegans,” <em>PLoS computational biology</em>, vol. 12, no. 12, p. e1005283, 2016.</p>
+</div>
+<div>
+<p>[54] C. I. Del Genio, J. Gómez-Gardeñes, I. Bonamassa, and S. Boccaletti, “Synchronization in networks with multiple interaction layers,” <em>Science Advances</em>, vol. 2, no. 11, p. e1601679, 2016.</p>
+</div>
+<div>
+<p>[55] O. Schweiger, J. Settele, O. Kudrna, S. Klotz, and I. Kühn, “Climate change can cause spatial mismatch of trophically interacting species,” <em>Ecology</em>, vol. 89, no. 12, pp. 3472–3479, 2008.</p>
+</div>
+<div>
+<p>[56] D. Ludwig, D. D. Jones, and C. S. Holling, “Qualitative analysis of insect outbreak systems: The spruce budworm and forest,” <em>The Journal of Animal Ecology</em>, pp. 315–332, 1978.</p>
+</div>
+<div>
+<p>[57] A. J. Butte and I. S. Kohane, “Unsupervised knowledge discovery in medical databases using relevance networks.” in <em>Proceedings of the amia symposium</em>, 1999, p. 711.</p>
+</div>
+<div>
+<p>[58] A. J. Butte and I. S. Kohane, “Mutual information relevance networks: Functional genomic clustering using pairwise entropy measurements,” in <em>Biocomputing 2000</em>, World Scientific, 1999, pp. 418–429.</p>
+</div>
+<div>
+<p>[59] B. Zhang and S. Horvath, “A general framework for weighted gene co-expression network analysis,” <em>Statistical applications in genetics and molecular biology</em>, vol. 4, no. 1, 2005.</p>
+</div>
+<div>
+<p>[60] C. Uhler, “Gaussian graphical models: An algebraic and geometric perspective,” <em>arXiv preprint arXiv:1707.04345</em>, 2017.</p>
+</div>
+<div>
+<p>[61] A. A. Margolin <em>et al.</em>, “ARACNE: An algorithm for the reconstruction of gene regulatory networks in a mammalian cellular context,” in <em>BMC bioinformatics</em>, 2006, vol. 7, pp. 1–15.</p>
+</div>
+<div>
+<p>[62] G. D. Tourassi, E. D. Frederick, M. K. Markey, and C. E. Floyd Jr, “Application of the mutual information criterion for feature selection in computer-aided diagnosis,” <em>Medical physics</em>, vol. 28, no. 12, pp. 2394–2402, 2001.</p>
+</div>
+<div>
+<p>[63] H. Peng, F. Long, and C. Ding, “Feature selection based on mutual information criteria of max-dependency, max-relevance, and min-redundancy,” <em>IEEE Transactions on pattern analysis and machine intelligence</em>, vol. 27, no. 8, pp. 1226–1238, 2005.</p>
+</div>
+<div>
+<p>[64] E. Z. Chen and H. Li, “A two-part mixed-effects model for analyzing longitudinal microbiome compositional data,” <em>Bioinformatics</em>, vol. 32, no. 17, pp. 2611–2617, 2016.</p>
+</div>
+<div>
+<p>[65] M. Layeghifard, D. M. Hwang, and D. S. Guttman, “Disentangling interactions in the microbiome: A network perspective,” <em>Trends in microbiology</em>, vol. 25, no. 3, pp. 217–228, 2017.</p>
+</div>
+<div>
+<p>[66] N. Meinshausen and P. Bühlmann, “High-dimensional graphs and variable selection with the lasso,” <em>The annals of statistics</em>, vol. 34, no. 3, pp. 1436–1462, 2006.</p>
+</div>
+<div>
+<p>[67] R. Bonneau <em>et al.</em>, “The inferelator: An algorithm for learning parsimonious regulatory networks from systems-biology data sets de novo,” <em>Genome biology</em>, vol. 7, no. 5, pp. 1–16, 2006.</p>
+</div>
+<div>
+<p>[68] M. Layeghifard, D. M. Hwang, and D. S. Guttman, “Constructing and analyzing microbiome networks in r,” in <em>Microbiome analysis</em>, Springer, 2018, pp. 243–266.</p>
+</div>
+<div>
+<p>[69] A. E. Gamiño-Arroyo, M. P. Barrios-Ceballos, L. P. C. de la Peña, F. Anaya-Velázquez, and F. Padilla-Vaca, “Flora normal, probióticos y salud humana,” <em>Acta universitaria</em>, vol. 15, no. 3, pp. 34–40, 2005.</p>
+</div>
+<div>
+<p>[70] D. Rothschild <em>et al.</em>, “Environment dominates over host genetics in shaping human gut microbiota,” <em>Nature</em>, vol. 555, no. 7695, pp. 210–215, 2018.</p>
+</div>
+<div>
+<p>[71] T. Korem <em>et al.</em>, “Growth dynamics of gut microbiota in health and disease inferred from single metagenomic samples,” <em>Science</em>, vol. 349, no. 6252, pp. 1101–1106, 2015.</p>
+</div>
+<div>
+<p>[72] G. Falony, S. Vieira-Silva, and J. Raes, “Richness and ecosystem development across faecal snapshots of the gut microbiota,” <em>Nature microbiology</em>, vol. 3, no. 5, pp. 526–528, 2018.</p>
+</div>
+<div>
+<p>[73] T. Yatsunenko <em>et al.</em>, “Human gut microbiome viewed across age and geography,” <em>nature</em>, vol. 486, no. 7402, pp. 222–227, 2012.</p>
+</div>
+<div>
+<p>[74] J. Qin <em>et al.</em>, “A human gut microbial gene catalogue established by metagenomic sequencing,” <em>nature</em>, vol. 464, no. 7285, pp. 59–65, 2010.</p>
+</div>
+<div>
+<p>[75] F. Bäckhed <em>et al.</em>, “The gut microbiota as an environmental factor that regulates fat storage,” <em>Proceedings of the national academy of sciences</em>, vol. 101, no. 44, pp. 15718–15723, 2004.</p>
+</div>
+<div>
+<p>[76] L. M. Cox and M. J. Blaser, “Antibiotics in early life and obesity,” <em>Nature Reviews Endocrinology</em>, vol. 11, no. 3, pp. 182–190, 2015.</p>
+</div>
+<div>
+<p>[77] A. Górski <em>et al.</em>, “Perspectives of phage therapy in non-bacterial infections,” <em>Frontiers in Microbiology</em>, vol. 9, p. 3306, 2019.</p>
+</div>
+<div>
+<p>[78] J. C. Clemente <em>et al.</em>, “The microbiome of uncontacted amerindians,” <em>Science advances</em>, vol. 1, no. 3, p. e1500183, 2015.</p>
+</div>
+<div>
+<p>[79] S. A. Smits <em>et al.</em>, “Seasonal cycling in the gut microbiome of the hadza hunter-gatherers of tanzania,” <em>Science</em>, vol. 357, no. 6353, pp. 802–806, 2017.</p>
+</div>
+<div>
+<p>[80] A. Flint, A. Raben, J. Rehfeld, J. Holst, and A. Astrup, “The effect of glucagon-like peptide-1 on energy expenditure and substrate metabolism in humans,” <em>International journal of obesity</em>, vol. 24, no. 3, pp. 288–298, 2000.</p>
+</div>
+<div>
+<p>[81] K. M. Maslowski <em>et al.</em>, “Regulation of inflammatory responses by gut microbiota and chemoattractant receptor gpr43,” <em>Nature</em>, vol. 461, no. 7268, pp. 1282–1286, 2009.</p>
+</div>
+<div>
+<p>[82] S. Macfarlane and G. T. Macfarlane, “Composition and metabolic activities of bacterial biofilms colonizing food residues in the human gut,” <em>Applied and environmental microbiology</em>, vol. 72, no. 9, pp. 6204–6211, 2006.</p>
+</div>
+<div>
+<p>[83] W. R. Russell <em>et al.</em>, “Major phenylpropanoid-derived metabolites in the human gut can arise from microbial fermentation of protein,” <em>Molecular nutrition &amp; food research</em>, vol. 57, no. 3, pp. 523–535, 2013.</p>
+</div>
+<div>
+<p>[84] V. D. de Mello <em>et al.</em>, “Indolepropionic acid and novel lipid metabolites are associated with a lower risk of type 2 diabetes in the finnish diabetes prevention study,” <em>Scientific reports</em>, vol. 7, no. 1, pp. 1–12, 2017.</p>
+</div>
+<div>
+<p>[85] S. Tims <em>et al.</em>, “Microbiota conservation and bmi signatures in adult monozygotic twins,” <em>The ISME journal</em>, vol. 7, no. 4, pp. 707–717, 2013.</p>
+</div>
+<div>
+<p>[86] U. Gophna, T. Konikoff, and H. B. Nielsen, “Oscillospira and related bacteria–from metagenomic species to metabolic features,” <em>Environmental microbiology</em>, vol. 19, no. 3, pp. 835–841, 2017.</p>
+</div>
+<div>
+<p>[87] T. L. Miller, M. Wolin, E. C. de Macario, and A. Macario, “Isolation of methanobrevibacter smithii from human feces,” <em>Applied and environmental microbiology</em>, vol. 43, no. 1, pp. 227–232, 1982.</p>
+</div>
+<div>
+<p>[88] V. K. Ridaura <em>et al.</em>, “Gut microbiota from twins discordant for obesity modulate metabolism in mice,” <em>Science</em>, vol. 341, no. 6150, 2013.</p>
+</div>
+<div>
+<p>[89] C. A. Thaiss <em>et al.</em>, “Hyperglycemia drives intestinal barrier dysfunction and risk for enteric infection,” <em>Science</em>, vol. 359, no. 6382, pp. 1376–1383, 2018.</p>
+</div>
+<div>
+<p>[90] K. H. Allin <em>et al.</em>, “Aberrant intestinal microbiota in individuals with prediabetes,” <em>Diabetologia</em>, vol. 61, no. 4, pp. 810–820, 2018.</p>
+</div>
+<div>
+<p>[91] T. Bryrup <em>et al.</em>, “Metformin-induced changes of the gut microbiota in healthy young men: Results of a non-blinded, one-armed intervention study,” <em>Diabetologia</em>, vol. 62, no. 6, pp. 1024–1035, 2019.</p>
+</div>
+<div>
+<p>[92] A. Adeshirlarijaney, J. Zou, H. Q. Tran, B. Chassaing, and A. T. Gewirtz, “Amelioration of metabolic syndrome by metformin associates with reduced indices of low-grade inflammation independently of the gut microbiota,” <em>American Journal of Physiology-Endocrinology and Metabolism</em>, vol. 317, no. 6, pp. E1121–E1130, 2019.</p>
+</div>
+<div>
+<p>[93] Y. Fan <em>et al.</em>, “Comprehensive metabolomic characterization of coronary artery diseases,” <em>Journal of the American College of Cardiology</em>, vol. 68, no. 12, pp. 1281–1293, 2016.</p>
+</div>
+<div>
+<p>[94] E. D. Michos, J. W. McEvoy, and R. S. Blumenthal, “Lipid management for the prevention of atherosclerotic cardiovascular disease,” <em>New England Journal of Medicine</em>, vol. 381, no. 16, pp. 1557–1567, 2019.</p>
+</div>
+<div>
+<p>[95] H. Sokol <em>et al.</em>, “Faecalibacterium prausnitzii is an anti-inflammatory commensal bacterium identified by gut microbiota analysis of crohn disease patients,” <em>Proceedings of the National Academy of Sciences</em>, vol. 105, no. 43, pp. 16731–16736, 2008.</p>
+</div>
+<div>
+<p>[96] X. Cui <em>et al.</em>, “Metagenomic and metabolomic analyses unveil dysbiosis of gut microbiota in chronic heart failure patients,” <em>Scientific reports</em>, vol. 8, no. 1, pp. 1–15, 2018.</p>
+</div>
+<div>
+<p>[97] W. Zhu <em>et al.</em>, “Gut microbial metabolite tmao enhances platelet hyperreactivity and thrombosis risk,” <em>Cell</em>, vol. 165, no. 1, pp. 111–124, 2016.</p>
+</div>
+<div>
+<p>[98] V. Senthong <em>et al.</em>, “Intestinal microbiota-generated metabolite trimethylamine-n-oxide and 5-year mortality risk in stable coronary artery disease: The contributory role of intestinal microbiota in a courage-like patient cohort,” <em>Journal of the American Heart Association</em>, vol. 5, no. 6, p. e002816, 2016.</p>
+</div>
+<div>
+<p>[99] H. L. Collins <em>et al.</em>, “L-carnitine intake and high trimethylamine n-oxide plasma levels correlate with low aortic lesions in apoe-/- transgenic mice expressing cetp,” <em>Atherosclerosis</em>, vol. 244, pp. 29–37, 2016.</p>
+</div>
+<div>
+<p>[100] R. Rao, A. Seth, and P. Sheth, “Recent advances in alcoholic liver disease i. Role of intestinal permeability and endotoxemia in alcoholic liver disease,” <em>American Journal of Physiology-Gastrointestinal and Liver Physiology</em>, vol. 286, no. 6, pp. G881–G884, 2004.</p>
+</div>
+<div>
+<p>[101] M. A. Jackson <em>et al.</em>, “Detection of stable community structures within gut microbiota co-occurrence networks from different human populations,” <em>PeerJ</em>, vol. 6, p. e4303, 2018.</p>
+</div>
+<div>
+<p>[102] C. Lozupone <em>et al.</em>, “Identifying genomic and metabolic features that can underlie early successional and opportunistic lifestyles of human gut symbionts,” <em>Genome research</em>, vol. 22, no. 10, pp. 1974–1984, 2012.</p>
+</div>
+<div>
+<p>[103] R. Guimera and L. A. N. Amaral, “Cartography of complex networks: Modules and universal roles,” <em>Journal of Statistical Mechanics: Theory and Experiment</em>, vol. 2005, no. 2, p. P02001, 2005.</p>
+</div>
+<div>
+<p>[104] V. Colizza, A. Flammini, M. A. Serrano, and A. Vespignani, “Detecting rich-club ordering in complex networks,” <em>Nature physics</em>, vol. 2, no. 2, pp. 110–115, 2006.</p>
+</div>
+<div>
+<p>[105] S. N. Baldassano and D. S. Bassett, “Topological distortion and reorganized modular structure of gut microbial co-occurrence networks in inflammatory bowel disease,” <em>Scientific reports</em>, vol. 6, no. 1, pp. 1–14, 2016.</p>
+</div>
+<div>
+<p>[106] Z. Mayoral-Peña, R. Álvarez-Martı́nez, J. Fornoni, and E. Garrido, “The extended microbiota: How microbes shape plant-insect interactions,” in <em>Evolutionary ecology of plant-herbivore interaction</em>, Springer, 2020, pp. 135–146.</p>
+</div>
+<div>
+<p>[107] K. Faust, F. Bauchinger, S. de Buyl, and L. Lahti, <em>Seqtime: Time series analysis of sequencing data</em>. 2021.Available: <a href="https://github.com/hallucigenia-sparsa/seqtime">https://github.com/hallucigenia-sparsa/seqtime</a></p>
+</div>
+<div>
+<p>[108] F. David Materna, “Host lifestyle affects human microbiota on daily timescales,” <em>Genome Biology</em>, vol. 7, 2014.</p>
+</div>
+<div>
+<p>[109] G. Csardi and T. Nepusz, “The igraph software package for complex network research,” <em>InterJournal</em>, vol. Complex Systems, p. 1695, 2006,Available: <a href="https://igraph.org">https://igraph.org</a></p>
+</div>
+<div>
+<p>[110] P. J. McMurdie and S. Holmes, “Phyloseq: An r package for reproducible interactive analysis and graphics of microbiome census data,” <em>PLoS ONE</em>, vol. 8, no. 4, p. e61217, 2013,Available: <a href="http://dx.plos.org/10.1371/journal.pone.0061217">http://dx.plos.org/10.1371/journal.pone.0061217</a></p>
+</div>
+<div>
+<p>[111] Z. Kurtz, C. Mueller, E. Miraldi, and R. Bonneau, <em>SpiecEasi: Sparse inverse covariance for ecological statistical inference</em>. 2021.</p>
+</div>
+<div>
+<p>[112] P. E. Meyer, F. Lafitte, and G. Bontempi, “MINET: An open source r/bioconductor package for mutual information based network inference,” <em>BMC Bioinformatics</em>, vol. 9, 2008,Available: <a href="http://www.biomedcentral.com/1471-2105/9/461">http://www.biomedcentral.com/1471-2105/9/461</a></p>
+</div>
+<div>
+<p>[113] M. De Domenico, <em>MuxViz: MuxViz - visualization and analysis of multilayer networks</em>. 2021.Available: <a href="https://github.com/manlius/muxViz">https://github.com/manlius/muxViz</a></p>
+</div>
+<div>
+<p>[114] M. Magnani, L. Rossi, and D. Vega, “Analysis of multiplex social networks with R,” <em>Journal of Statistical Software</em>, vol. 98, no. 8, pp. 1–30, 2021, doi: <a href="https://doi.org/10.18637/jss.v098.i08">10.18637/jss.v098.i08</a>.</p>
+</div>
+<div>
+<p>[115] T. Wei and V. Simko, <em>R package ’corrplot’: Visualization of a correlation matrix</em>. 2021.Available: <a href="https://github.com/taiyun/corrplot">https://github.com/taiyun/corrplot</a></p>
+</div>
+<div>
+<p>[116] R. Kindt and R. Coe, <em>Tree diversity analysis. A manual and software for common statistical methods for ecological and biodiversity studies</em>. Nairobi (Kenya): World Agroforestry Centre (ICRAF), 2005.Available: <a href="http://www.worldagroforestry.org/output/tree-diversity-analysis">http://www.worldagroforestry.org/output/tree-diversity-analysis</a></p>
+</div>
+<div>
+<p>[117] B. Tóthmérész, “Comparison of different methods for diversity ordering,” <em>Journal of vegetation Science</em>, vol. 6, no. 2, pp. 283–290, 1995.</p>
+</div>
+<div>
+<p>[118] D. Combe, C. Largeron, M. Géry, and E. Egyed-Zsigmond, “I-louvain: An attributed graph clustering method,” in <em>International symposium on intelligent data analysis</em>, 2015, pp. 181–192.</p>
+</div>
+<div>
+<p>[119] P. De Meo, E. Ferrara, G. Fiumara, and A. Provetti, “Generalized louvain method for community detection in large networks,” in <em>2011 11th international conference on intelligent systems design and applications</em>, 2011, pp. 88–93.</p>
+</div>
+<div>
+<p>[120] G. Klein and J. E. Aronson, “Optimal clustering: A model and method,” <em>Naval Research Logistics (NRL)</em>, vol. 38, no. 3, pp. 447–461, 1991.</p>
+</div>
+<div>
+<p>[121] L. A. Kazakovtsev and A. N. Antamoshkin, “Genetic algorithm with fast greedy heuristic for clustering and location problems,” <em>Informatica</em>, vol. 38, no. 3, 2014.</p>
+</div>
+<div>
+<p>[122] K. Y. Yeung and W. L. Ruzzo, “Details of the adjusted rand index and clustering algorithms, supplement to the paper an empirical study on principal component analysis for clustering gene expression data,” <em>Bioinformatics</em>, vol. 17, no. 9, pp. 763–774, 2001.</p>
+</div>
+<div>
+<p>[123] L. Ana and A. K. Jain, “Robust data clustering,” in <em>2003 ieee computer society conference on computer vision and pattern recognition, 2003. Proceedings.</em>, 2003, vol. 2, pp. II–II.</p>
+</div>
+<div>
+<p>[124] J. K. Goldberg, “Towards understanding the mechanisms maintaining a stable trichome dimorphism in the sacred datura plant (datura wrightii),” PhD thesis, Indiana University, 2020.</p>
+</div>
+<div>
+<p>[125] M. del Pilar Martı́nez-Diz, M. Andrés-Sodupe, R. Bujanda, E. Dı́az-Losada, A. Eichmeier, and D. Gramaje, “Soil-plant compartments affect fungal microbiome diversity and composition in grapevine,” <em>Fungal Ecology</em>, vol. 41, pp. 234–244, 2019.</p>
+</div>
+<div>
+<p>[126] C. Fausto <em>et al.</em>, “Olive orchard microbiome: Characterisation of bacterial communities in soil-plant compartments and their comparison between sustainable and conventional soil management systems,” <em>Plant ecology &amp; diversity</em>, vol. 11, nos. 5-6, pp. 597–610, 2018.</p>
+</div>
+<div>
+<p>[127] K. Visakorpi, S. Gripenberg, Y. Malhi, and T. Riutta, “Does insect herbivory suppress ecosystem productivity? Evidence from a temperate woodland,” <em>bioRxiv</em>, 2021.</p>
+</div>
+<div>
+<p>[128] F. Renoz <em>et al.</em>, “Evidence for gut-associated serratia symbiotica in wild aphids and ants provides new perspectives on the evolution of bacterial mutualism in insects,” <em>Microbial ecology</em>, vol. 78, no. 1, pp. 159–169, 2019.</p>
+</div>
+<div>
+<p>[129] E. K. Costello, C. L. Lauber, M. Hamady, N. Fierer, J. I. Gordon, and R. Knight, “Bacterial community variation in human body habitats across space and time,” <em>science</em>, vol. 326, no. 5960, pp. 1694–1697, 2009.</p>
+</div>
+<div>
+<p>[130] J. G. Caporaso <em>et al.</em>, “Moving pictures of the human microbiome,” <em>Genome biology</em>, vol. 12, no. 5, pp. 1–8, 2011.</p>
+</div>
+<div>
+<p>[131] L. Dethlefsen and D. A. Relman, “Incomplete recovery and individualized responses of the human distal gut microbiota to repeated antibiotic perturbation,” <em>Proceedings of the National Academy of Sciences</em>, vol. 108, no. Supplement 1, pp. 4554–4561, 2011.</p>
+</div>
+<div>
+<p>[132] L. A. David <em>et al.</em>, “Host lifestyle affects human microbiota on daily timescales,” <em>Genome biology</em>, vol. 15, no. 7, pp. 1–15, 2014.</p>
+</div>
+<div>
+<p>[133] F. Magne <em>et al.</em>, “The firmicutes/bacteroidetes ratio: A relevant marker of gut dysbiosis in obese patients?” <em>Nutrients</em>, vol. 12, no. 5, p. 1474, 2020.</p>
+</div>
+<div>
+<p>[134] C. M. dos S. P. Indiani, K. F. Rizzardi, P. M. Castelo, L. F. C. Ferraz, M. Darrieux, and T. M. Parisotto, “Childhood obesity and firmicutes/bacteroidetes ratio in the gut microbiota: A systematic review,” <em>Childhood obesity</em>, vol. 14, no. 8, pp. 501–509, 2018.</p>
+</div>
+<div>
+<p>[135] S. Stojanov, A. Berlec, and B. Štrukelj, “The influence of probiotics on the firmicutes/bacteroidetes ratio in the treatment of obesity and inflammatory bowel disease,” <em>Microorganisms</em>, vol. 8, no. 11, p. 1715, 2020.</p>
+</div>
+<div>
+<p>[136] S. Lee, K. I. Keirsey, R. Kirkland, Z. I. Grunewald, J. G. Fischer, and C. B. de La Serre, “Blueberry supplementation influences the gut microbiota, inflammation, and insulin resistance in high-fat-diet–fed rats,” <em>The Journal of nutrition</em>, vol. 148, no. 2, pp. 209–219, 2018.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="discusión.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-Referencias.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
