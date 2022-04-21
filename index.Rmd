@@ -1,7 +1,6 @@
 --- 
 title: "Redes multicapa como herramienta de análisis de la microbiota"
 author: "Víctor Lázaro Vidal"
-date: "09/02/22"
 output:
   word_document: default
   html_document:
@@ -18,32 +17,28 @@ site: bookdown::bookdown_site
 
 # Resumen {-}
 
-En la biología nos vemos constantemente enfrentados a los  sistemas complejos, es decir, sistemas conformados por muchos componentes que interactúan entre sí, y cuyo comportamiento solo puede ser explicado como la suma de la interacción de sus componentes. Un ejemplo de este tipo de sistemas es la microbiota, donde distintos microorganismos interactúan entre sí, con los tejidos del hospedero y con su entorno. Las redes son una herramienta matemática sumamente útil en el análisis de sistemas complejos, sin embargo el enfoque tradicional enfrenta ciertas limitaciones, pues los sistemas biológicos son sistemas dinámicos que cambian en el tiempo y en función de las condiciones. Ante tales retos, las redes multicapa se presentan como un nuevo paradigma en el análisis de sistemas complejos.
- 
-Empleando redes multiplex, analizamos bases de datos obtenidas a partir de muestras de la microbiota de dos organismos estrechamente relacionados, la solanácea *Datura inoxia* y el escarabajo *Lema daturaphila*. Las redes de coabundancia fueron generadas mediante los algoritmos de inferencia SparCC y ARACNe. Se hallaron comunidades bacterianas involucradas en la fijación de nitrógeno en la capa de la solanácea, mismas que podrían tener una relación mutualista con los tejidos de la planta. Tanto en la solanácea como en el escarabajo se encontraron comunidades bacterianas asociadas al tejido intestinal del insecto, lo que en la solanácea podría derivarse de la materia fecal depositada por las larvas mientras se alimentan de la planta.
- 
-Bajo el enfoque de las redes temporales, se analizaron datos de dos sujetos que experimentaron cambios en su microbiota derivados de procesos infecciosos. Las redes ARACNe de ambos sujetos mostraron alteraciones en la arquitectura de las redes durante los periodos de disbiosis asociados a procesos infecciosos, lo que podría indicar alteraciones en la dinámica de la microbiota. También se identificaron proporciones alteradas de los *phyla* durante los estadios de disbiosis. Además, gran parte de los nodos encontrados en una misma comunidad eran filogenéticamente cercanos. El uso de redes multicapa nos permitió encontrar patrones en las comunidades bacterianas que podrían estar asociados a procesos puntuales, como la liberación de AGCCs y el metabolismo de determinados nutrientes.
+En biología existen múltiples ejemplos de sistemas complejos, es decir, sistemas conformados por una gran cantidad de componentes que interactúan entre sí, y cuyo comportamiento sólo puede entenderse como el producto de las interacciones de tales componentes. Un ejemplo de este tipo de sistemas es la microbiota, donde distintos microorganismos interactúan entre sí, con los tejidos del hospedero y con su entorno. Las redes son una herramienta matemática sumamente útil en el análisis de sistemas complejos, sin embargo el enfoque tradicional enfrenta ciertas limitaciones, pues los sistemas biológicos son sistemas dinámicos que cambian en el tiempo y en función de las condiciones. Ante tales retos, las redes multicapa se presentan como un nuevo paradigma en el análisis de sistemas complejos. Empleando redes multiplex, analizamos bases de datos obtenidas a partir de muestras de la microbiota de dos organismos estrechamente relacionados, la solanácea *Datura inoxia* y el escarabajo *Lema daturaphila*. Las redes de coabundancia fueron generadas mediante los algoritmos de inferencia SparCC y ARACNe. Se hallaron comunidades bacterianas involucradas en la fijación de nitrógeno en la capa de la solanácea, mismas que podrían tener una relación mutualista con los tejidos de la planta. Tanto en la solanácea como en el escarabajo se encontraron comunidades bacterianas asociadas al tejido intestinal del insecto, lo que en la solanácea podría derivarse de la materia fecal depositada por las larvas mientras se alimentan de la planta. Bajo el enfoque de las redes temporales, se analizaron datos de dos sujetos que experimentaron cambios en su microbiota derivados de procesos infecciosos. Las redes ARACNe de ambos sujetos mostraron alteraciones en la arquitectura de las redes durante los periodos de disbiosis asociados a procesos infecciosos, lo que podría indicar alteraciones en la dinámica de la microbiota. También se identificaron proporciones alteradas de los *phyla* durante los estadios de disbiosis. Además, gran parte de los nodos encontrados en una misma comunidad eran filogenéticamente cercanos. El uso de redes multicapa nos permitió encontrar patrones en las comunidades bacterianas que podrían estar asociados a procesos puntuales, como la liberación de AGCCs y el metabolismo de determinados nutrientes.
+
 
 ## Summary {-}
 
-In biology, we are constantly facing complex systems. It means systems made up of many components that interact with each other and whose behavior can only be explained as the sum of the interaction of its components. An example of this type of system is the microbiota, where different microorganisms interact with each other, with the host's tissues, and with their environment. Networks are a handy mathematical tool for analyzing complex systems; however, the traditional approach faces certain limitations because biological systems are dynamical systems that change over time and conditions. In order to deal with such challenges, multilayer networks appear as a new paradigm in analyzing complex systems.
+In biology there are multiple examples of complex systems. It means systems made up of many components that interact with each other, and whose behavior can only be understood as the sum of the interactions of its components. An example of this type of system is the microbiota, where different microorganisms interact with each other, with the host’s tissues, and with their environment. Networks are a handy mathematical tool for analyzing complex systems; however, the traditional approach faces certain limitations because biological systems are dynamical systems that change over time and conditions. In order to deal with such challenges, multilayer networks appear as a new paradigm in analyzing complex systems. Through the use of multiplex networks, I analyzed databases obtained from samples of the microbiota of two closely related organisms: the nightshade *Datura inoxia* and the beetle *Lema daturaphila*. I use SparCC and ARACNe algorithms for inferring co-abundance networks. Bacterial communities involved in nitrogen fixation in the solanaceous layer abound, which could have a mutualistic relationship with plant tissues. Bacterial communities associated with the insect’s intestinal tissue appeared on both layers, something that could derive from the larvae’ dregs in solanaceous while feeding on the plant. Under the approach of the temporal network, I analyzed data from two subjects who experienced changes in their microbiota derived from infectious processes. The ARACNe networks of both subjects showed alterations in the architecture of the networks during periods of dysbiosis associated with infectious processes, which could indicate alterations in the dynamics of the microbiota. Altered *phyla* proportions came into sight during dysbiosis stages. Furthermore, most of the nodes found in the same community were phylogenetically close. The use of multilayer networks allowed us to find patterns in bacterial communities that could be associated with specific processes, such as the release of SCFAs and the metabolism of certain nutrients.
 
-Through the use of multiplex networks, I analyzed databases obtained from samples of the microbiota of two closely related organisms: the nightshade *Datura inoxia* and the beetle *Lema daturaphila*. I use SparCC and ARACNe algorithms for inferring co-abundance networks. Bacterial communities involved in nitrogen fixation in the solanaceous layer abound, which could have a mutualistic relationship with plant tissues. Bacterial communities associated with the insect's intestinal tissue appeared on both layers. It could derive from the larvae' dregs in solanaceous while feeding on the plant.
-
-Under the approach of the temporal network, I analyzed data from two subjects who experienced changes in their microbiota derived from infectious processes. The ARACNe networks of both subjects showed alterations in the architecture of the networks during periods of dysbiosis associated with infectious processes, which could indicate alterations in the dynamics of the microbiota. Altered *phyla* proportions came into sight during dysbiosis stages. Furthermore, most of the nodes found in the same community were phylogenetically close. The use of multilayer networks allowed us to find patterns in bacterial communities that could be associated with specific processes, such as the release of SCFAs and the metabolism of certain nutrients.
 
 ## Agradecimientos {-}
 ## Tabla de contenido {-}
 
-1. Resumen
+## Índice {-}
 
-1.1 Summary
+Resumen
 
-1.2 Agradecimientos
+Summary
 
-1.3 Tabla de contenidos
+Agradecimientos
 
-2. Índice de cuadros y figuras
+Tabla de contenidos
+
+Índice de cuadros y figuras
 
 2.1 Figuras
 
