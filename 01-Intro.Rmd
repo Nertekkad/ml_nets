@@ -14,7 +14,6 @@ Por su puesto, la microbiota no es la excepción, e investigaciones recientes ha
 
 
 
-
 ## Objetivo general {-}
 
 Mediante el uso de redes multicapa, el presente trabajo pretende analizar redes de co-abundancia de OTUs bacterianos procedentes de muestras de la microbiota, empleando este enfoque para comparar la arquitectura de las distintas capas y establecer si existen patrones a través de los cuales se pueda obtener información sobre las características de la microbiota, su dinámica y su relación con el o los huéspedes.
