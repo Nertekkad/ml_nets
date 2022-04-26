@@ -40,47 +40,47 @@ Tabla de contenidos
 
 Índice de cuadros y figuras
 
-2.1 Figuras
+  Figuras
 
-2.2 Tablas
+  Tablas
 
-3. Introducción
+1. Introducción
 
-4. Objetivo general
+2. Antecedentes
 
-4.1 Objetivos particulares
+2.1 Definición y generalidades de una red
 
-5. Antecedentes
+2.2 Propiedades topológicas de las redes
 
-5.1 Definición y generalidades de una red
+2.3 Definición y características de las redes multicapa
 
-5.2 Propiedades topológicas de las redes
+2.4 Aplicaciones de las redes multicapa
 
-5.3 Definición y características de las redes multicapa
+2.5 Inferencias de redes
 
-5.4 Aplicaciones de las redes multicapa
+2.6 La microbiota intestinal y su impacto en la salud humana
 
-5.5 Inferencias de redes
+2.7 Uso de redes en la exploración de la microbiota
 
-5.6 La microbiota intestinal y su impacto en la salud humana
+3. Objetivo general
 
-5.7 Uso de redes en la exploración de la microbiota
+3.1 Objetivos particulares
 
-6. Materiales y métodos
+4. Materiales y métodos
 
-7. Resultados
+5. Resultados
 
-7.1 Resultados de la red escarabajo-solanácea
+5.1 Resultados de la red escarabajo-solanácea
 
-7.2 Resultados de las redes para los sujetos A y B
+5.2 Resultados de las redes para los sujetos A y B
 
-8. Discusión
+6. Discusión
 
-8.1 Discusión de la red escarabajo-solanácea
+6.1 Discusión de la red escarabajo-solanácea
 
-8.2 Discusión de las redes temporales de los sujetos A y B
+6.2 Discusión de las redes temporales de los sujetos A y B
 
-8.3 Conclusiones generales
+6.3 Conclusiones generales
 
 9. Referencias
 
